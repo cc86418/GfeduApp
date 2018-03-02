@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <jc.cici.android.atom.view.AutoCardView
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_margin="30px"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iconMore_img"
+                android:layout_width="94px"
+                android:layout_height="94px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/item_studyhome_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="22px"
+                android:layout_toRightOf="@+id/iconMore_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/moreTitle_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10px"
+                    android:textColor="#333333"
+                    android:textSize="30px"
+                    tools:text="网校重构" />
+
+                <TextView
+                    android:id="@+id/moreDetail_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingRight="10px"
+                    android:paddingTop="18px"
+                    android:textColor="#666666"
+                    android:textSize="28px"
+                    tools:text="下载后更方便直观下载后更方便直观下载后更方便直观" />
+            </LinearLayout>
+        </RelativeLayout>
+    </jc.cici.android.atom.view.AutoCardView>
+</RelativeLayout>

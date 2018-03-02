@@ -1,0 +1,22 @@
+<cn.jun.courseinfo.ui.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/twoScrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cn.jun.view.ListViewForScrollView
+            android:id="@+id/myList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </cn.jun.view.ListViewForScrollView>
+
+    </LinearLayout>
+
+
+</cn.jun.courseinfo.ui.MyScrollView>

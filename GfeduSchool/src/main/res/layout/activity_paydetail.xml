@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/spe_line_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerVertical="true"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spe_line_img">
+
+        <RelativeLayout
+            android:id="@+id/success_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/success_img"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_success" />
+
+                <TextView
+                    android:id="@+id/tipOrder_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24px"
+                    android:layout_toRightOf="@+id/success_img"
+                    android:text=""
+                    android:textColor="@color/banner_title_color"
+                    android:textSize="30px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/unpaid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27px"
+            android:layout_below="@+id/success_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/unpaid_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/unpaidName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/unpaid_txt"
+                    android:text="0"
+                    android:textColor="#dd5555"
+                    android:textSize="28px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/orderArr_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unpaid_layout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/orderArr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="剩余支付金额："
+                android:textColor="#666666"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/orderArrName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/orderArr_txt"
+                android:text="0"
+                android:textColor="#666666"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/order_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderArr_layout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24px">
+
+            <TextView
+                android:id="@+id/order_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="订单号："
+                android:textColor="#666666"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/orderName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/order_txt"
+                android:text="0"
+                android:textColor="#666666"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goods_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_layout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24px">
+
+            <TextView
+                android:id="@+id/goods_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="商品名称："
+                android:textColor="#666666"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/goodsName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/goods_txt"
+                android:text="0"
+                android:textColor="#666666"
+                android:maxLines="5"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/batchPay"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/goods_layout"
+            android:layout_marginTop="58px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/batchPay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="多笔支付"
+                android:textColor="@color/banner_title_color"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14px"
+                android:layout_toRightOf="@+id/batchPay_txt"
+                android:text="(金额超过500元，可选择分多笔付款)"
+                android:textColor="#999999"
+                android:textSize="20px" />
+
+            <ImageView
+                android:id="@+id/upImg"
+                android:layout_width="26px"
+                android:layout_height="13px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/icon_up" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nowPay"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/batchPay"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30px" />
+
+            <TextView
+                android:id="@+id/nowPay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="本次支付金额："
+                android:textColor="@color/banner_title_color"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/nowPayName_txt"
+                android:layout_width="260px"
+                android:layout_height="76px"
+                android:layout_centerVertical="true"
+                android:inputType="numberDecimal"
+                android:layout_toRightOf="@+id/nowPay_txt"
+                android:background="@drawable/bg_pay"
+                android:textColor="#dd5555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/nowPayName_txt"
+                android:text="元"
+                android:textColor="@color/banner_title_color"
+                android:textSize="30px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_below="@+id/nowPay"
+            android:layout_marginTop="20px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#f5f5f5" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/llImg"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/line_layout"
+            android:background="#dddddd" />
+
+        <RelativeLayout
+            android:id="@+id/weiXinPay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="104px"
+            android:layout_below="@+id/llImg">
+
+            <ImageView
+                android:id="@+id/weiXinImg"
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/icon_weixin" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24px"
+                android:layout_toRightOf="@+id/weiXinImg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信支付"
+                    android:textColor="@color/banner_title_color"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信安全支付"
+                    android:textColor="#999999"
+                    android:textSize="20px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/weiXinSel_Img"
+                android:layout_width="22px"
+                android:layout_height="22px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/icon_radio_default" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ll2Img"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/weiXinPay_layout"
+            android:layout_marginLeft="30px"
+            android:background="#dddddd" />
+
+        <RelativeLayout
+            android:id="@+id/zhiFuBao_layout"
+            android:layout_width="match_parent"
+            android:layout_height="104px"
+            android:layout_below="@+id/ll2Img">
+
+            <ImageView
+                android:id="@+id/zhiFuBaoImg"
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/icon_zhifubao" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24px"
+                android:layout_toRightOf="@+id/zhiFuBaoImg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝支付"
+                    android:textColor="@color/banner_title_color"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝安全支付"
+                    android:textColor="#999999"
+                    android:textSize="20px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/zhiFuBaoSel_Img"
+                android:layout_width="22px"
+                android:layout_height="22px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/icon_radio_default" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ll3Img"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/zhiFuBao_layout"
+            android:background="#dddddd" />
+
+        <RelativeLayout
+            android:id="@+id/line2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_below="@+id/ll3Img">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#f5f5f5" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/view_pay_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2_layout" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pay_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/error_hint_txt_color"
+        android:text="立即支付"
+        android:textColor="@color/_ffffff"
+        android:textSize="28px" />
+</RelativeLayout>

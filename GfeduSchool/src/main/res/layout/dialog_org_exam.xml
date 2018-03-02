@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ensure_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#dddddd">
+
+        <Button
+            android:id="@+id/sure_dialog_Btn"
+            android:layout_width="106px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/login_button_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/knowledge_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ensure_layout">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

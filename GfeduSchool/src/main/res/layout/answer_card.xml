@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android_custom="http://schemas.android.com/tools"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/backLayout"
+                android:layout_width="90px"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+
+                <ImageButton
+                    android:id="@+id/backBtn"
+                    android:layout_width="20px"
+                    android:layout_height="36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/ic_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/class_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/test_report_txt"
+                android:textColor="@color/banner_title_color"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/reset_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="@string/test_reset_txt"
+                android:textColor="#dd5555"
+                android:textSize="32px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/auto_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/progress_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            progress_bar
+
+                            <jc.cici.android.atom.view.ScoreProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="300px"
+                                android:layout_height="300px"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30px"
+                                android_custom:roundColor="@color/banner_color"
+                                android_custom:roundProgressColor="@color/error_hint_txt_color"
+                                android_custom:textIsDisplayable="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120px"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/xuexi_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="正确率"
+                                android:textColor="#999999"
+                                android:textSize="20px" />
+
+                            <TextView
+                                android:id="@+id/time_txt_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="150px"
+                                android:text="做题用时"
+                                android:textColor="#999999"
+                                android:textSize="20px" />
+
+                            <TextView
+                                android:id="@+id/time_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/time_txt_tv"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5px"
+                                android:text="1:00:00"
+                                android:textColor="#dd5555"
+                                android:textSize="24px" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44px"
+                        android:layout_below="@+id/auto_layout">
+
+                        <TextView
+                            android:id="@+id/sckd_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="交卷时间"
+                            android:textColor="#333333"
+                            android:textSize="30px" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.zhy.autolayout.AutoFrameLayout>
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/class_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/analytical_layout"
+            android:layout_below="@+id/progressLayout"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="46px"
+            android:background="@drawable/online_class_expand_bg"
+            android:divider="@null"
+            android:groupIndicator="@null"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/analytical_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30px">
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#FFFFFF"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/wrongAnalytical_btn"
+                android:layout_width="320px"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:layout_toLeftOf="@+id/line"
+                android:background="@drawable/card_btn_bg"
+                android:text="错题解析"
+                android:textColor="#dd5555"
+                android:textSize="30px"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/allAnalytical_btn"
+                android:layout_width="320px"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25px"
+                android:layout_toRightOf="@+id/line"
+                android:background="@drawable/card_btn_bg"
+                android:text="全部解析"
+                android:textColor="#dd5555"
+                android:textSize="30px"
+                style="?android:attr/borderlessButtonStyle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

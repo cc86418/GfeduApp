@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gs_bottom_ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gs_msg_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gs_msg_bottom_ly"
+        android:background="@color/gs_msg_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/gs_msg_bottom_tv"
+            style="@style/gs_both_wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gs_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/gs_msg_bottom_tv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_top_line"
+        android:layout_width="match_parent"
+        android:background="@color/bottom_chat_top"
+        android:layout_height="1dp"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_ll"
+        style="@style/gs_width_match_parent"
+        android:layout_height="@dimen/gs_chat_bottom"
+        android:background="@color/gs_chat_bottom_bg"
+        android:gravity="center_vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/gs_chat_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gs_chat_bottom_left"
+            android:layout_weight="1"
+            android:background="@drawable/gs_chat_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                style="@style/gs_width_match_parent"
+                android:layout_weight="1" >
+
+                <com.gensee.view.ChatEditText
+                    android:id="@+id/gs_chat_content_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:maxLines="4"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:imeOptions="flagNoFullscreen"
+                    android:textColor="@drawable/gs_selector_bottom_input_edt"
+                    android:textSize="@dimen/gs_chat_editview_context" />
+
+                <TextView
+                    android:id="@+id/gs_chat_tip_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone"
+                    android:textColor="@color/gs_chat_edit_view_unenaable"
+                    android:textSize="@dimen/gs_chat_editview_context" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/gs_chat_avatar_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gs_selector_chat_select_avatar_iv" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gs_chat_send_tv"
+            style="@style/gs_height_match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/gs_chat_bottom_right_1"
+            android:paddingRight="@dimen/gs_chat_bottom_right_2"
+            android:text="@string/gs_chat_send"
+            android:textColor="@drawable/gs_selector_send_tv"
+            android:textSize="@dimen/gs_chat_send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gs_viewpageexpressionlinear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gs_emotion_panel_height"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/gs_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:flipInterval="10"
+                    android:persistentDrawingCache="animation" />
+
+                <LinearLayout
+                    android:id="@+id/gs_chatexpressaddimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gs_expr_tran_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

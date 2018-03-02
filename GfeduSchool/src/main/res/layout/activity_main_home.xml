@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:layout_width="10dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_tab_contact"
+            android:gravity="center"
+            android:text="学习"
+            android:textColor="@drawable/selector_tabtv_contact"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_contacts"
+            android:layout_width="10dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_moments"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+            android:text="选课"
+            android:textColor="@drawable/selector_tabtv_contact"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_discovery"
+            android:layout_width="10dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_profile"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/selector_tabtv_contact"
+            android:textSize="10sp" />
+
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/xx_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/xx_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_tab_contact" />
+
+            <TextView
+                android:id="@+id/xx_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学习"
+                android:textColor="@drawable/selector_tabtv_contact"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tk_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/tk_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_tab_tiku" />
+
+            <TextView
+                android:id="@+id/tk_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题库"
+                android:textColor="@drawable/selector_tabtv_contact"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/xk_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/xk_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_tab_moments" />
+
+            <TextView
+                android:id="@+id/xk_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选课中心"
+                android:textColor="@drawable/selector_tabtv_contact"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/zb_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/zb_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_tab_zhibo" />
+
+            <TextView
+                android:id="@+id/zb_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直播"
+                android:textColor="@drawable/selector_tabtv_contact"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/wd_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/wd_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_tab_profile" />
+
+            <TextView
+                android:id="@+id/wd_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textColor="@drawable/selector_tabtv_contact"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

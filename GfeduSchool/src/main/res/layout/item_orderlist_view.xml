@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:background="@color/_ffffff"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/orderNumber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd" />
+
+        <ImageView
+            android:id="@+id/orderNumber_img"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/icon_order_number" />
+
+        <TextView
+            android:id="@+id/orderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28px"
+            android:layout_toRightOf="@+id/orderNumber_img"
+            android:text="订单号："
+            android:textColor="@color/banner_title_color"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/orderNumber_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/orderNumber"
+            android:textColor="@color/banner_title_color"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/finishCondition_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="30px" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/typeClass_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderNumber_layout"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/typeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totalPrices_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/typeClass_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="26px">
+
+        <TextView
+            android:id="@+id/totalPrices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="总额："
+            android:textColor="@color/banner_title_color"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/totalPricesName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/totalPrices"
+            android:text="￥0"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/havePrices_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/totalPrices_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/havePrices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="已支付："
+            android:textColor="@color/banner_title_color"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/havePricesName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/havePrices"
+            android:text="￥0"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noPrices_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/havePrices_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/noPrices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="还需支付："
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/noPricesName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/noPrices"
+            android:text="￥0"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logistics_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/noPrices_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="24px"
+        android:layout_marginBottom="24px">
+
+        <Button
+            android:id="@+id/checkLog_Btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_checklog"
+            android:text="查看物流"
+            android:textColor="@color/banner_title_color"
+            android:textSize="24px" />
+
+        <Button
+            android:id="@+id/goBill_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:layout_toRightOf="@+id/checkLog_Btn"
+            android:background="@drawable/bg_gobill"
+            android:text="开发票"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gs_both_wrap_content"
+    android:id="@+id/gs_ly_msg_item"
+    android:background="@color/gs_transparent"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+        <!--<TextView
+            android:id="@+id/tv_msg_role"
+            style="@style/both_wrap_content"
+            android:text="系统消息"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/chat_item_sender_color"/>-->
+        <com.gensee.view.MyTextViewEx
+            android:id="@+id/gs_tv_msg_content"
+            style="@style/gs_both_wrap_content"
+            android:textColor="@color/gs_white"
+            android:textSize="15sp"
+            android:shadowColor="@color/gs_black"
+            android:shadowRadius="1"
+            android:text="直播开始了"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/qa_item_hor"
+    android:paddingRight="@dimen/qa_item_hor"
+    android:paddingTop="@dimen/qa_item_top" >
+
+    <LinearLayout
+        android:id="@+id/qa_only_question_ly"
+        style="@style/gs_width_match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/gs_width_match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/qa_only_question_tip_tv"
+                style="@style/qa_tv"
+                android:layout_weight="1"
+                android:textColor="@color/qa_item_question_tip">
+            </TextView>
+
+            <TextView
+                android:id="@+id/qa_only_question_time_tv"
+                style="@style/gs_both_wrap_content"
+                android:textColor="@color/qa_item_time"
+                android:textSize="@dimen/qa_item_time" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qa_only_question_content_tv"
+            style="@style/qa_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_marginTop="@dimen/qa_item_content_ver" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qa_answer_ly"
+        android:visibility="gone"
+        style="@style/gs_width_match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/qa_answer1_ly"
+            style="@style/gs_width_match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/gs_width_match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/qa_answer_tip_tv"
+                    style="@style/qa_tv"
+                    android:layout_weight="1"
+                    android:textColor="@color/qa_item_answer_tip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/qa_answer_time_tv"
+                    style="@style/gs_both_wrap_content"
+                    android:textColor="@color/qa_item_time"
+                    android:textSize="@dimen/qa_item_time" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/qa_answer_content_tv"
+                style="@style/qa_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginTop="@dimen/qa_item_content_ver" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qa_answer2_ly"
+            style="@style/gs_width_match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/qa_answer_question_content_tv"
+                style="@style/qa_tv"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true" 
+                android:textColor="@color/qa_item_answer_question"/>
+
+            <TextView
+                android:id="@+id/qa_answer_question_expand_iv"
+                style="@style/gs_both_wrap_content"
+                android:paddingLeft="@dimen/qa_item_expand_left_iv"
+                android:drawableRight="@drawable/selector_qa_expand_iv" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

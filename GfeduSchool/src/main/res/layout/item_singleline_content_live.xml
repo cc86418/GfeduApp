@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/singleContent_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/teacherImg"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/icon_avatar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/book_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/book_btn"
+                android:layout_width="110px"
+                android:layout_height="40px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="18px"
+                android:background="@drawable/no_book"
+                android:text="立即预约"
+                android:textColor="@color/white"
+                android:textSize="20px" />
+
+            <RelativeLayout
+                android:layout_width="110px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_btn"
+                android:layout_marginTop="20px">
+
+                <TextView
+                    android:id="@+id/count_booked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="0人预约"
+                    android:textColor="#666666"
+                    android:textSize="20px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/book_layout"
+            android:layout_toRightOf="@+id/singleContent_layout">
+
+            <TextView
+                android:id="@+id/liveTime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="18px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxEms="15"
+                android:textColor="#333333"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/liveCourseName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/liveTime_txt"
+                android:layout_marginTop="20px"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxEms="15"
+                android:textColor="#666666"
+                android:textSize="26px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/content_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="38px"
+        android:background="#dddddd" />
+</RelativeLayout>

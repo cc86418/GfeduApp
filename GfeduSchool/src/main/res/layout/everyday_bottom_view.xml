@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/tab_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/txt_favor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/_ffffff"
+                android:drawableTop="@drawable/tab_menu_favors"
+                android:gravity="center"
+                android:text="收藏夹"
+                android:textColor="#666666"
+                android:textSize="20px" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_node"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/_ffffff"
+                        android:drawableTop="@drawable/tab_menu_error"
+                        android:text="笔记"
+                        android:textColor="#666666"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/noteTip"
+                        android:layout_width="23px"
+                        android:layout_height="23px"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_toRightOf="@+id/txt_node"
+                        android:background="@drawable/tip_bg"
+                        android:gravity="center"
+                        android:textColor="@color/_ffffff"
+                        android:textSize="14px"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_ques"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/_ffffff"
+                        android:drawableTop="@drawable/tab_menu_favor"
+                        android:gravity="center"
+                        android:text="提问"
+                        android:textColor="#666666"
+                        android:textSize="20px" />
+
+                    <TextView
+                        android:id="@+id/quesTip"
+                        android:layout_width="23px"
+                        android:layout_height="23px"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="-8dp"
+                        android:layout_toRightOf="@+id/txt_ques"
+                        android:background="@drawable/tip_bg"
+                        android:gravity="center"
+                        android:textColor="@color/_ffffff"
+                        android:textSize="14px"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

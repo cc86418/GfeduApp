@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">金程网校</string>
+    <string name="app_version">版本号v5.0.3</string>
+    <string name="about_content">\u3000\u3000金程教育，全名上海金程教育培训有限公司，前身为上海金程国际金融专修学院，总部位于中国金融中心上海，专注于提供国内外财经职业资格认证培训及财会金融领域的咨询、培训服务，以“专业来自101%的投入”致力于成为学员与客户可信赖的财经培训专家，打造财经教育领域的匠心品牌。秉承“服务社会·帮助他人·成就自己”的核心价值观，金程教育以客户为中心，坚持不断提升产品品质，先后推出了包括：国内外会计和金融证书考试培训、企业咨询和培训服务、研究生入学考试辅导培训、财富管理辅导、以及互联网在线教育五大业务体系。</string>
+    <string name="about_content_two">\u3000\u3000坚持“专业·创新·增值”的经营理念，金程教育突破传统单一教学模式，通过为学员提供职业规划、职场培现财经精英梦想，成为客户与学员成功路上的事业伙伴，共同铸就金色前程！</string>
+    <string name="about_tv">2000 - 2018 沪ICP备08016784号 本公司通过</string>
+    <string name="about_tv_tv">ISO9001:2008 国际质量管理体系认证</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal"></string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="wechat">微信</string>
+    <string name="contacts"> 学习</string>
+    <string name="discover">选课</string>
+    <string name="me">我的</string>
+
+    <string name="photos_num">%1$d张</string>
+    <string name="msg_no_camera">没找到摄像头</string>
+    <string name="msg_maxi_capacity">已达到照片选择上限</string>
+    <string name="commit">确定</string>
+    <string name="commit_num">确定(%1$d/%2$d)</string>
+
+    <string name="form_txt">课表</string>
+    <string name="register_txt">注册</string>
+    <string name="hint_txt">请输入手机号码或用户名</string>
+    <string name="hint_pwd_txt">请输入密码</string>
+    <string name="login_txt">登录</string>
+    <string name="fast_login_txt">快速免密登录</string>
+    <string name="findPwd_txt">忘记密码</string>
+    <string name="partner_txt">合作账号登录</string>
+    <string name="register_hint_txt">请输入姓名</string>
+    <string name="register_phone_hintTxt">请输入11位手机号码</string>
+    <string name="identify_hint_txt">请输入验证码</string>
+    <string name="verify_hint_txt">请输入动态码</string>
+    <string name="verify_button_txt">获取动态码</string>
+    <string name="register_PWD_txt">密码由8到15位数字和字母组成</string>
+    <string name="user_tip_txt">未注册的手机号码验证后自动创建金程账号,且代表您已经同意</string>
+    <string name="user_actionTip_txt">《金程用户协议》</string>
+    <string name="own_user_txt">已有账号,</string>
+    <string name="immediately_login_txt">马上登录</string>
+    <string name="next_txt">下一步</string>
+    <string name="ensure_txt">确定</string>
+    <string name="finish_txt">完成</string>
+    <string name="ensure_pwd_txt">确认密码</string>
+    <string name="dialog_hit_txt">密码设置成功，请妥善保存您的密码</string>
+    <string name="dialog_login_txt">立即登录</string>
+    <string name="tab_noHaveCard_txt">无金程账号</string>
+    <string name="tab_haveCard_txt">有金程账号</string>
+    <string name="card_register_txt">注册</string>
+    <string name="noCard_notice_txt">点击注册按钮，自动生成一个同昵称的金程账号并绑定微信，今后可以通过微信号直接登录</string>
+    <string name="card_bind_txt">绑定</string>
+    <string name="haveCard_notice_txt">点击绑定后，今后可以直接用微信号登录</string>
+    <string name="tip_login_txt">登录后才能查看课程</string>
+    <string name="have_finish_txt">坚持学习</string>
+    <string name="have_notFinish_txt">未完成学时</string>
+    <string name="have_cache_txt">已缓存的视频</string>
+    <string name="test_txt">距离2017年6月3日\nCFA一级考试，还有</string>
+    <string name="study_progress_txt">学习进度</string>
+    <string name="question_txt">问题</string>
+    <string name="note_txt">笔记</string>
+    <string name="material_txt">资料</string>
+    <string name="qr_txt">扫码签到</string>
+    <string name="finish_time_txt">完成学时</string>
+    <string name="attendence_txt">出勤率</string>
+    <string name="search_hint_txt">请输入需要搜索的上课内容</string>
+    <string name="cancel_txt">取消</string>
+    <string name="course_detail_txt">课程详情</string>
+    <string name="course_teacher_text">授课老师</string>
+    <string name="scan_tips">\"将二维码图片对准扫描框即可自动扫描\"</string>
+    <string name="nostart">未开始</string>
+    <string name="course_note_txt">本课笔记</string>
+    <string name="course_ques_txt">本课提问</string>
+    <string name="add_note_hint_txt">请输入笔记内容</string>
+    <string name="add_img_hint_txt">添加图片</string>
+    <string name="map_knowledge_txt">知识地图：</string>
+    <string name="response_txt">0追问</string>
+    <string name="relative_txt">相关问题</string>
+    <string name="delete_txt">删除</string>
+    <string name="no_answer">暂无答案</string>
+    <string name="zhuiwen_txt">我要追问</string>
+    <string name="input_hint_txt">我也说一句</string>
+    <string name="comment_txt">评论</string>
+    <string name="note_hint_txt">请先选择笔记对应科目</string>
+    <string name="test_report_txt">测试报告</string>
+    <string name="test_reset_txt">重做</string>
+
+    <string name="delete_tip">删除%1$d个视频</string>
+
+    <string name="input_noteHint_txt">请输入笔记关键字</string>
+    <string name="input_quesHint_txt">请输入问题关键字</string>
+
+    <string name="txt_shopping_tips">您还没有购买课程哦~</string>
+
+
+
+
+
+    <string name="category_all">推荐</string>
+    <string name="category_all_my">推荐</string>
+    <string name="category_society">社会</string>
+    <string name="category_subscribe">订阅</string>
+    <string name="category_video">视频</string>
+    <string name="category_health">健康</string>
+    <string name="category_sports">体育</string>
+    <string name="category_tech">科技</string>
+    <string name="category_car">汽车</string>
+    <string name="category_entertainment">娱乐</string>
+    <string name="category_finance">财经</string>
+    <string name="category_military">军事</string>
+    <string name="category_world">国际</string>
+    <string name="category_hot">热点</string>
+    <string name="category_positive">正能量</string>
+    <string name="category_essay_joke">段子</string>
+    <string name="category_image_funny">趣图</string>
+    <string name="category_image_ppmm">美女</string>
+    <string name="category_movie">电影</string>
+    <string name="category_digital">数码</string>
+    <string name="category_news_fashion">时尚</string>
+    <string name="category_rumor">辟谣</string>
+    <string name="category_marvel">奇葩</string>
+    <string name="category_news_game">游戏</string>
+    <string name="category_news_travel">旅游</string>
+    <string name="category_news_baby">育儿</string>
+    <string name="category_fitness">减肥</string>
+    <string name="category_news_regimen">养生</string>
+    <string name="category_news_food">美食</string>
+    <string name="category_government">政务</string>
+    <string name="category_news_history">历史</string>
+    <string name="category_news_discovery">探索</string>
+    <string name="category_news_story">故事</string>
+    <string name="category_news_essay">美文</string>
+    <string name="category_emotion">情感</string>
+    <string name="category_essay_saying">语录</string>
+    <string name="category_image_wonderful">美图</string>
+    <string name="category_news_house">家居</string>
+    <string name="category_news_home">房产</string>
+    <string name="category_funny">搞笑</string>
+    <string name="category_news_astrology">星座</string>
+    <string name="category_news_culture">文化</string>
+    <string name="category_graduate">毕业生</string>
+
+
+    <string name="bill1_txt">1.	发票抬头不能为空，您可以选择个人、公司名称或者您的姓名；</string>
+    <string name="bill2_txt">2.	《国家税务总局关于增值税发票开具有关问题的公告》（国家税务总局公告2017年第16号）文件规定：7月1日起，只要增值税普通发票有购买方纳税人识别号栏次的，必须填写购买方纳税人识别号，且发票内容应按照实际销售情况开具，不符合规定的发票，不得作为税收凭证。如为个人则无需填写纳税人识别号；</string>
+    <string name="bill3_txt">3.	我公司依据提供服务的业务实质及参培学员，对应开具发票；</string>
+    <string name="bill4_txt">4.	我公司承诺于学员缴费后30日内开具发票；</string>
+    <string name="bill5_txt">5.	电子发票开具请于本人班级结课前办理；</string>
+    <string name="bill6_txt">6.	学员一个班级允许开具一张相对应的发票；</string>
+    <string name="bill7_txt">7.	为保证您的正常权益，建议您在确保不退班、转班的情况下申请开具发票；</string>
+    <string name="bill8_txt">8.	我公司不支持开具海外跨境公司的发票。</string>
+    <string name="pay_notice1_txt">1.如您的订单金额较大，建议选择“多次支付”</string>
+    <string name="pay_notice2_txt">2.如您无法使用在线支付，可联系客服选择汇款支付，客服热线：400-700-9596</string>
+    <string name="pay_notice3_txt">3.温馨提示，线下支付，需在付款后上传付款凭证（拍照上传）。</string>
+
+    <string name="notice_txt">友情提醒：请仔细核对您的发票信息，确认提价后，发票信息不可更改。</string>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+
+    <string-array name="speeds">
+        <item>speed1.00</item>
+        <item>speed1.25</item>
+        <item>speed1.50</item>
+        <item>speed1.75</item>
+        <item>speed2.00</item>
+        <item>speed2.50</item>
+        <item>speed3.00</item>
+        <item>speed3.50</item>
+        <item>speed4.00</item>
+    </string-array>
+</resources>

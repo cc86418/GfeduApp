@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subDialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="340px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/btndialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/finish_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/finish_Img"
+                    android:layout_width="261px"
+                    android:layout_height="180px"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/finish_bg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/finishTxt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/finish_layout"
+                android:layout_marginTop="32px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="已完成"
+                    android:textColor="#333333"
+                    android:textSize="36px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/current_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/finishTxt_layout"
+                android:layout_marginTop="34px">
+
+                <TextView
+                    android:id="@+id/current_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="30px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reset_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_layout"
+                android:layout_marginTop="88px">
+
+                <Button
+                    android:id="@+id/doAgainBtn"
+                    android:layout_width="240px"
+                    android:layout_height="56px"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ring_btn_bg"
+                    android:text="重新做题"
+                    android:textColor="#ffffff"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/next_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reset_layout"
+                android:layout_marginTop="44px">
+
+                <Button
+                    android:id="@+id/doNextBtn"
+                    android:layout_width="240px"
+                    android:layout_height="56px"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ring_btn_bg"
+                    android:text="下一个任务"
+                    android:textColor="#ffffff"
+                    android:textSize="28px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkML_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32px"
+                    android:layout_height="32px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_mulu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:text="查看目录"
+                    android:textColor="@color/error_hint_txt_color"
+                    android:textSize="30px" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

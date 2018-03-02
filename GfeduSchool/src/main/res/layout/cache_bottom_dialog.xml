@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:id="@+id/bottom_delete_relative"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/synchronization_background">
+
+
+        <TextView
+            android:id="@+id/bottom_delete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除sum数据"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="#dd5555" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qx_relative"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/bottom_delete_relative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/synchronization_background">
+
+        <TextView
+            android:id="@+id/qx_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="#575757" />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

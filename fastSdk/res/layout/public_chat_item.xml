@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/public_chat_item_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/public_chat_ver_line"
+            android:layout_height="@dimen/public_chat_item_top"
+            android:layout_marginLeft="@dimen/public_chat_item_line_left"
+            android:background="@color/public_chat_item_line"
+            android:id="@+id/top_iv" />
+        <ImageView
+            android:id="@+id/bottom_line_iv"
+            android:layout_width="@dimen/public_chat_ver_line"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_iv"
+            android:layout_marginTop="@dimen/public_chat_line_top"
+            android:layout_alignBottom="@+id/item_ly"
+            android:layout_marginLeft="@dimen/public_chat_item_line_left"
+            android:background="@color/public_chat_item_line" />
+        <LinearLayout
+            android:id="@+id/item_ly"
+            style="@style/gs_width_match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/public_chat_item_left"
+            android:paddingRight="@dimen/public_chat_item_left"
+            android:layout_marginTop="@dimen/public_chat_item_top" >
+
+            <LinearLayout
+                style="@style/gs_width_match_parent"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/item_tip_iv"
+                    style="@style/gs_both_wrap_content"
+                    android:background="@drawable/chat_host_iv" />
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    style="@style/gs_width_match_parent"
+                    android:layout_marginLeft="@dimen/public_chat_item_hor"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="alskdjfladskf"
+                    android:textColor="@color/public_chat_item_default_tip"
+                    android:textSize="@dimen/public_chat_item_tip" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/gs_both_wrap_content"
+                    android:text="08:02:32"
+                    android:textColor="@color/qa_item_time"
+                    android:textSize="@dimen/public_chat_item_time" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gs_width_match_parent"
+                android:layout_marginTop="@dimen/public_chat_item_ver"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    style="@style/gs_both_wrap_content"
+                    android:background="@drawable/chat_host_iv"
+                    android:visibility="invisible" />
+
+                <com.gensee.view.MyTextViewEx
+                    android:id="@+id/content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/public_chat_item_hor"
+                    android:text="alskdjfladskf"
+                    android:textColor="@color/public_chat_item_default_content"
+                    android:textSize="@dimen/public_chat_item_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!---->
+    <RelativeLayout
+        android:id="@+id/public_chat_item_hongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingRight="@dimen/public_chat_item_left">
+        <ImageView
+            android:layout_width="@dimen/public_chat_ver_line"
+            android:layout_height="16dp"
+            android:layout_marginLeft="@dimen/public_chat_item_line_left"
+            android:background="@color/public_chat_item_line"
+            android:id="@+id/top_iv_ref" />
+        <ImageView
+            android:id="@+id/item_tip_hb_iv"
+            style="@style/gs_both_wrap_content"
+            android:layout_below="@+id/top_iv_ref"
+            android:layout_marginLeft="@dimen/public_chat_item_left"
+            android:background="@drawable/ic_hb_chat_av" />
+        <ImageView
+            android:id="@+id/item_hb_line"
+            android:layout_width="@dimen/public_chat_ver_line"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_iv_ref"
+            android:layout_marginTop="@dimen/public_chat_line_top"
+            android:layout_alignBottom="@+id/hb_msg_tv"
+            android:layout_marginLeft="@dimen/public_chat_item_line_left"
+            android:background="@color/public_chat_item_line" />
+        <TextView
+            android:id="@+id/hb_msg_tv"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_toRightOf="@id/top_iv_ref"
+            android:background="@drawable/ic_chat_hb_bg"
+            android:text="alskdjfladskf"
+            android:textColor="@color/public_chat_item_default_content"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/public_chat_item_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/public_chat_item_left"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/public_chat_ver_line"
+            android:layout_height="16dp"
+            android:layout_marginLeft="@dimen/public_chat_item_line_left"
+            android:background="@color/public_chat_item_line"
+            android:id="@+id/top_iv_ref_tip" />
+        <ImageView
+            android:id="@+id/item_tip_hb_iv_tip"
+            style="@style/gs_both_wrap_content"
+            android:layout_below="@+id/top_iv_ref_tip"
+            android:layout_marginLeft="@dimen/public_chat_item_left"
+            android:background="@drawable/ic_chat_tip_msg" />
+        <ImageView
+            android:id="@+id/item_hb_line_tip"
+            android:layout_width="@dimen/public_chat_ver_line"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_iv_ref_tip"
+            android:layout_marginTop="@dimen/public_chat_line_top"
+            android:layout_alignBottom="@+id/hb_msg_tv_tip"
+            android:layout_marginLeft="@dimen/public_chat_item_line_left"
+            android:background="@color/public_chat_item_line" />
+        <TextView
+            android:id="@+id/hb_msg_tv_tip"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_toRightOf="@id/top_iv_ref_tip"
+            android:background="@drawable/shape_tip_msg_bg"
+            android:text="alskdjfladskf"
+            android:textColor="@color/public_chat_tip_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>

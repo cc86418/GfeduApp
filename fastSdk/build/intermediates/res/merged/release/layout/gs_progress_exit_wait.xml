@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:background="@color/gs_other_color_pop"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/gs_both_wrap_content"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="164dp"
+        android:minHeight="87dp"
+        android:background="@drawable/gs_warming_bg"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/gs_progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/gs_selector_exit_wait"
+            android:indeterminateDuration="3000"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@+id/gs_tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gs_exit_tip"
+            android:paddingTop="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

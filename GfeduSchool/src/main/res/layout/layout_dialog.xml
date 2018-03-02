@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_bg_radius"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/dc_dialog_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_dialog_tips" />
+
+            <TextView
+                android:id="@+id/dc_dialog_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你查找的用户不存在哟！"
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/dc_dialog_txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="不要伤心，找找其他小伙伴吧。"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!-- 确认按钮 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#a6a6a6" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dc_dialog_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="1px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_gray_left_selector"
+                android:padding="10dp"
+                android:text="取消"
+                android:textColor="#dd5555"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/dc_dialog_view_line_v"
+                android:layout_width="2px"
+                android:layout_height="50dp"
+                android:background="#888888" />
+
+            <Button
+                android:id="@+id/dc_dialog_btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1px"
+                android:layout_marginRight="1px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_gray_right_selector"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="#dd5555"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

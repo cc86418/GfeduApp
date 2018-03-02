@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/top_relavite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+          />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/chuqing"
+            android:layout_toRightOf="@+id/touxiang">
+
+            <TextView
+                android:id="@+id/tx_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tx_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_1"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tx_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_2"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#dd5555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tx_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_3"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#575757"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tx_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_4"
+                android:layout_marginTop="13dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/chuqing"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_chuqing" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_pyx"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/top_relavite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/btn_pingyixia" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/btn_pyx"
+        android:layout_marginTop="20dp"
+        android:background="#f5f5f5">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relative_5"
+        android:background="#dddddd" />
+
+</RelativeLayout>

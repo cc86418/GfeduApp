@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/allshipp_im"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/pic_kong_xiangqing"
+            android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/allshipp_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="1231111111111111111111113222222222222222222222222222222"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp" />
+
+
+
+            <TextView
+                android:id="@+id/allshipp_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="129381-12839198"
+                android:textColor="#dd5555"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递公司 : "
+                android:textSize="13dp"
+                android:textColor="#8d8d8d"/>
+
+            <TextView
+                android:id="@+id/allshipp_kdgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递公司 : "
+                android:textSize="13dp"
+                android:textColor="#8d8d8d"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递单号 : "
+                android:textSize="13dp"
+                android:textColor="#8d8d8d"/>
+
+            <TextView
+                android:id="@+id/allshipp_kddh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递公司 : "
+                android:textSize="13dp"
+                android:textColor="#8d8d8d"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发货时间 : "
+                android:textSize="13dp"
+                android:textColor="#8d8d8d"/>
+
+            <TextView
+                android:id="@+id/allshipp_kdsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递公司 : "
+                android:textSize="13dp"
+                android:textColor="#8d8d8d"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:background="#dddddd" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subDialog_layout"
+    android:layout_width="600px"
+    android:layout_height="270px"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/test_dialog_bg"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/takePic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="拍照"
+            android:textColor="#333333"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selPic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_below="@+id/takePic_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="从相册中选择"
+            android:textColor="#333333"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textColor="#dd5555"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+</RelativeLayout>

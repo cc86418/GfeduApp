@@ -1,0 +1,54 @@
+<cn.jun.courseinfo.ui.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oneScrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <WebView
+                android:id="@+id/CourseDetailsWb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            </WebView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_date_realtive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/no_data_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pic_kong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_data_im"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:text="空空如也,暂无数据"
+                android:textColor="#666666" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</cn.jun.courseinfo.ui.MyScrollView>

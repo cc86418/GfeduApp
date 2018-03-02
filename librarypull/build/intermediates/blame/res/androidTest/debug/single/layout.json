@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\xlistview_header.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\bundles\\debug\\res\\layout\\xlistview_header.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\xlistview_footer.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\bundles\\debug\\res\\layout\\xlistview_footer.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_list_app.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\bundles\\debug\\res\\layout\\item_list_app.xml"
+    }
+]

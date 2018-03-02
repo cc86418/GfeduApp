@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qa_view_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_bg"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <RelativeLayout
+        style="@style/gs_both_match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/lv_padding_bottom" >
+
+        <include layout="@layout/bottom_lv_layout" />
+        <LinearLayout
+            android:id="@+id/new_msg_ly"
+            android:gravity="center"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/new_msg_tip_layout"></include>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/gs_both_match_parent" >
+
+        <include layout="@layout/rel_tip_layout" >
+        </include>
+    </RelativeLayout>
+
+</RelativeLayout>

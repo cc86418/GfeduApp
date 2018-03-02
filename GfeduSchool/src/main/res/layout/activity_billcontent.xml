@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/spe_line_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerVertical="true"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spe_line_img">
+
+        <RelativeLayout
+            android:id="@+id/person_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="发票抬头"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/personName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34px"
+                android:layout_toRightOf="@+id/person"
+
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/billType_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/person_layout"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/billType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="发票类型"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/billTypeName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34px"
+                android:layout_toRightOf="@+id/billType"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/billContent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/billType_layout"
+            android:background="@color/_ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/billContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="发票内容"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="1px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/billContent" />
+
+            <TextView
+                android:id="@+id/billContentName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/line"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billType_layout"
+            android:background="@color/_ffffff">
+
+            <RelativeLayout
+                android:id="@+id/taxpayer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@color/_ffffff">
+
+                <TextView
+                    android:id="@+id/taxpayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="纳税人识别号"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/taxpayerName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:layout_toRightOf="@+id/taxpayer"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30px"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_below="@+id/taxpayer_layout"
+                android:background="@color/_ffffff">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="公司地址"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/addressName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:layout_toRightOf="@+id/address"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30px"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_below="@+id/address_layout"
+                android:background="@color/_ffffff">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="电话"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/phoneName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:layout_toRightOf="@+id/phone"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30px"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_below="@+id/phone_layout"
+                android:background="@color/_ffffff">
+
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="开户行"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/bankName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:layout_toRightOf="@+id/bank"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30px"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bankAccount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_below="@+id/bank_layout"
+                android:background="@color/_ffffff">
+
+                <TextView
+                    android:id="@+id/bankAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="银行账号"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/bankAccountName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:layout_toRightOf="@+id/bankAccount"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remarks_layout"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_below="@+id/bankAccount_layout"
+                android:layout_marginTop="20px"
+                android:background="@color/_ffffff">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:background="#dddddd" />
+
+                <TextView
+                    android:id="@+id/remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="备注"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/remarksName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:layout_toRightOf="@+id/remarks"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

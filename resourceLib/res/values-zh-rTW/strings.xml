@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="brow_nh_cn_text">【你好】</string>
+    <string name="brow_zj_cn_text">【再見】</string>
+    <string name="brow_gx_cn_text">【高興】</string>
+    <string name="brow_sx_cn_text">【傷心】</string>
+    <string name="brow_tkl_cn_text">【太快了】</string>
+    <string name="brow_tml_cn_text">【太慢了】</string>
+    <string name="brow_zt_cn_text">【讚同】</string>
+    <string name="brow_fd_cn_text">【反對】</string>
+    <string name="brow_gz_cn_text">【鼓掌】</string>
+    <string name="brow_fn_cn_text">【憤怒】</string>
+    <string name="brow_zdsk_cn_text">【值得思考】</string>
+    <string name="brow_wl_cn_text">【無聊】</string>
+    <string name="brow_lh_cn_text">【流汗】</string>
+    <string name="brow_bs_cn_text">【鄙視】</string>
+    <string name="brow_yw_cn_text">【疑問】</string>
+    <string name="brow_dx_cn_text">【凋謝】</string>
+    <string name="brow_xh_cn_text">【鮮花】</string>
+    <string name="brow_lw_cn_text">【禮物】</string>
+    <string name="emotion_bz_cn_text">【閉嘴】</string>
+    <string name="emotion_fd_cn_text">【奮鬥】</string>
+    <string name="emotion_gg_cn_text">【尷尬】</string>
+    <string name="emotion_gz_cn_text">【鼓掌】</string>
+    <string name="emotion_hx_cn_text">【害羞】</string>
+    <string name="emotion_jk_cn_text">【驚恐】</string>
+    <string name="emotion_jy_cn_text">【驚訝】</string>
+    <string name="emotion_kb_cn_text">【摳鼻】</string>
+    <string name="emotion_kl_cn_text">【可憐】</string>
+    <string name="emotion_ll_cn_text">【流淚】</string>
+    <string name="emotion_qd_cn_text">【敲打】</string>
+     <string name="emotion_qh_cn_text">【強悍】</string>
+     <string name="emotion_qq_cn_text">【親親】</string>
+     <string name="emotion_rb_cn_text">【弱爆】</string>
+     <string name="emotion_se_cn_text">【色】</string>
+     <string name="emotion_tx_cn_text">【偷笑】</string>
+     <string name="emotion_xu_cn_text">【虛】</string>
+     <string name="emotion_yun_cn_text">【暈】</string>
+    
+    <string name="chat_context_max">聊天內容總數不能大於512個</string>
+    <string name="chat_context_avatar_max">聊天內容表情數不能大於20個</string>
+</resources>

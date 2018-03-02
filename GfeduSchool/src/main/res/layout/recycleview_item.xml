@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="116dp"
+            android:layout_height="87.5dp">
+
+            <ImageView
+                android:id="@+id/list_im"
+                android:layout_width="116dp"
+                android:layout_height="87.5dp"
+                android:background="@drawable/pic_kong_xiangqing"
+                android:scaleType="fitXY">
+            </ImageView>
+
+            <Button
+                android:id="@+id/mfst_tv"
+                android:layout_width="45dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#6cb8a7"
+                android:text="免费试听"
+                android:textColor="#ffffff"
+                android:textSize="7dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text=""
+                android:textColor="@color/my_tvcolor"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/relayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/red_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text=""
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/red_tv"
+                    android:text=""
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/price_saleregion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relayout"
+                android:layout_marginTop="6dp"
+                android:text=""
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:background="#dddddd" />
+
+</LinearLayout>

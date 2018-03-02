@@ -1,0 +1,250 @@
+[
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\qa_item_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\qa_item_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_tip_board_item.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_tip_board_item.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pop_quality_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\pop_quality_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\private_chat_item_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\private_chat_item_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\qa_view_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\qa_view_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_xlistview_footer.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_xlistview_footer.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_land_idc_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_land_idc_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\new_msg_tip_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\new_msg_tip_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_publish_video_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_publish_video_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\receiver_float_right_bar.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\receiver_float_right_bar.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_publish_btns_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_publish_btns_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_dialog.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_dialog.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pop_more_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\pop_more_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_user_operate_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_user_operate_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\receiver_float_bottom_bar.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\receiver_float_bottom_bar.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_fragment_publish.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_fragment_publish.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_custom_toast_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_custom_toast_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_activity_land_pub.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_activity_land_pub.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_chat_bottom_ly.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_chat_bottom_ly.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\chat_bottom_ly.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\chat_bottom_ly.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main_lib.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\resourceLib\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main_lib.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_publish_top_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_publish_top_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_fragment_watch.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_fragment_watch.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_lottery_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_lottery_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_tip_board_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_tip_board_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_dialog_with_close_btn.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_dialog_with_close_btn.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_activity_watch.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_activity_watch.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\receiver_doc_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\receiver_doc_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bright_volume_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\bright_volume_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bottom_lv_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\bottom_lv_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\vote_child_item_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\vote_child_item_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_activity_live_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_activity_live_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\public_chat_view_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\public_chat_view_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\card_publish_tv.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\card_publish_tv.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_chat_gridview_expression_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_chat_gridview_expression_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_rollcall_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_rollcall_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_progress_dialog_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_progress_dialog_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_single_expression_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_single_expression_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rel_tip_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\rel_tip_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\receiver_video_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\receiver_video_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_idc_item_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_idc_item_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_black_idc_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_black_idc_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_reward_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_reward_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_xlistview_header.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_xlistview_header.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\card_view_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\card_view_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_amount_dialog.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_amount_dialog.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_pub_land_btns_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_pub_land_btns_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\card_single_judgment_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\card_single_judgment_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_fragment_land_pub.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_fragment_land_pub.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_public_chat_item.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_public_chat_item.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\private_chat_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\private_chat_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_idc_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_idc_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_activity_publish.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_activity_publish.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\vote_group_item_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\vote_group_item_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\public_chat_item.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\public_chat_item.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\top_float_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\top_float_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_progress_exit_wait.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_progress_exit_wait.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_input_dialog.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_input_dialog.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\gs_land_chat_item.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\gs_land_chat_item.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\progress_relative.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\progress_relative.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\vote_receiver_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\vote_receiver_layout.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\card_result_publish_item_layout.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\card_result_publish_item_layout.xml"
+    }
+]

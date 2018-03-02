@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subDialog_layout"
+    style="@style/SubmitDialogStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#82222222"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/txtdialog_layout"
+        android:layout_width="600px"
+        android:layout_height="420px"
+        android:layout_centerInParent="true"
+        android:background="@color/_ffffff">
+
+        <RelativeLayout
+            android:id="@+id/tip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/txt_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="休息一会~~"
+                android:textColor="#333333"
+                android:textSize="36px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btndialog_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/go_on"
+                android:layout_width="235px"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#dd5555"
+                android:text="继续做题"
+                android:textColor="#ffffff"
+                android:textSize="30px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/dialog_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btndialog_layout">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shot_line" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/edit_text_background_w_y"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:layout_marginRight="62dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLength="20"
+                android:text="我是woshi我是woshi我是woshi我是woshi我是woshi我是woshi"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/holder_image"
+            android:layout_width="250dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/relycview_item_bg" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relayout"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mfst_tv"
+                android:layout_width="95dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginTop="16dp"
+                android:background="#6cb8a7"
+                android:text="免费试听"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/price_saleregion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textColor="#f21010"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="29dp"
+        android:background="#ffffff" />
+
+</LinearLayout>

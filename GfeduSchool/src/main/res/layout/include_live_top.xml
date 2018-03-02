@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:visibility="visible">
+
+        <WebView
+            android:id="@+id/course_details_top_wb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/course_details_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="视频加载中...请稍后"
+            android:textColor="#666666"
+            android:textSize="13dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/course_details_top_im"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/top_back_RelativeLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/top_back"
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:background="@drawable/course_btn_back"></ImageView>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/course_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="111"
+        android:textColor="#333333"
+        android:lines="2"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/course_details_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="9dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="12121"
+            android:textSize="18dp"
+            android:textColor="#ff0000"/>
+
+        <TextView
+            android:id="@+id/course_details_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:text="22-33-44"
+            android:textColor="#ff0000"
+            android:textSize="22dp"></TextView>
+
+        <TextView
+            android:id="@+id/course_details_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="12dp"></TextView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f5f5f5" />
+
+
+</LinearLayout>

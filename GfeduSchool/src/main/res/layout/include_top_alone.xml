@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:visibility="visible">
+
+        <WebView
+            android:id="@+id/course_details_top_wb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/course_details_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="视频加载中...请稍后"
+            android:textColor="#666666"
+            android:textSize="13dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/course_details_top_im"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/top_back_RelativeLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/top_back"
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:background="@drawable/course_btn_back"></ImageView>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/course_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/course_details_intoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="9dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text=""
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/course_details_newprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:text=""
+        android:textColor="#ff0000"
+        android:textSize="22dp"></TextView>
+
+    <TextView
+        android:id="@+id/course_details_oldprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:text=""
+        android:textColor="#999999"
+        android:textSize="12dp"></TextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/course_details_kcpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="课程评价:"
+            android:textColor="#666666"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/course_details_kcpjxx_im"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/course_details_kcpj"
+            android:background="@drawable/icon_pingjiaxx"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" />
+
+        <ImageView
+            android:id="@+id/course_details_kcpjxx_im2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/course_details_kcpjxx_im"
+            android:background="@drawable/icon_pingjiaxx"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" />
+
+        <ImageView
+            android:id="@+id/course_details_kcpjxx_im3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/course_details_kcpjxx_im2"
+            android:background="@drawable/icon_pingjiaxx"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" />
+
+        <ImageView
+            android:id="@+id/course_details_kcpjxx_im4"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/course_details_kcpjxx_im3"
+            android:background="@drawable/icon_pingjiaxx"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" />
+
+        <ImageView
+            android:id="@+id/course_details_kcpjxx_im5"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/course_details_kcpjxx_im4"
+            android:background="@drawable/icon_pingjiaxx"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="13dp"
+            android:layout_toLeftOf="@+id/course_details_xxrs"
+            android:text="学习人数:"
+            android:textColor="#666666"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/course_details_xxrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="18dp"
+            android:text="150"
+            android:textColor="#666666"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+</LinearLayout>

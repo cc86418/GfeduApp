@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/infoExpress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/nameCompany_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60px">
+
+            <TextView
+                android:id="@+id/name_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:textColor="#333333"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nameExpress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_below="@+id/nameCompany_layout">
+
+            <TextView
+                android:id="@+id/name_express"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:textColor="#333333"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nameTime_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_below="@+id/nameExpress_layout">
+
+            <TextView
+                android:id="@+id/name_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:textColor="#333333"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_below="@+id/nameTime_layout">
+
+            <TextView
+                android:id="@+id/name_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:textColor="#333333"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/infoExpress_layout"
+        android:background="#f5f5f5" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_marginLeft="30px"
+    android:layout_marginRight="30px"
+    android:layout_marginTop="30px"
+    android:background="@drawable/bg_shadow_item">
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+
+        android:lineSpacingMultiplier="1.5"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#999999"
+        android:textSize="24px"
+        tools:text="金程网校提供CFA试题" />
+</RelativeLayout>

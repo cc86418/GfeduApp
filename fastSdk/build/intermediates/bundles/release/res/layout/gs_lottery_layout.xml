@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gs_lottery_width"
+    android:layout_height="@dimen/gs_lottery_height"
+    android:background="@color/gs_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/gs_both_match_parent"
+        android:layout_marginTop="@dimen/gs_lottery_title_height" >
+
+        <RelativeLayout
+            android:id="@+id/lottery_finish_ly"
+            style="@style/gs_both_match_parent"
+            android:paddingLeft="@dimen/gs_lottery_finish_hor"
+            android:paddingRight="@dimen/gs_lottery_finish_hor"
+            android:visibility="visible" >
+
+            <ImageView
+                style="@style/gs_both_wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/gs_lottery_finish_bg" />
+
+            <LinearLayout
+                style="@style/gs_both_match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/lottery_finish_lv"
+                    style="@style/gs_width_match_parent"
+                    android:cacheColorHint="@color/gs_transparent"
+                    android:divider="@color/gs_card_page_title_line_tv"
+                    android:listSelector="@color/gs_transparent"
+                    android:dividerHeight="1px" >
+                </ListView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lottery_abort_ly"
+            style="@style/gs_both_match_parent"
+            android:layout_marginTop="51dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/lottery_abort_tv"
+                style="@style/gs_width_match_parent"
+                android:gravity="center"
+                android:textColor="@color/gs_lottery_going_text"
+                android:textSize="@dimen/gs_lottery_going_text" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_going_ly"
+        style="@style/gs_both_match_parent"
+        android:background="@color/gs_lottery_going_bg"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/lottery_going_pb"
+            android:layout_width="218dp"
+            android:layout_height="218dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-29dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/gs_lottery_going_progressbar"
+            android:indeterminateDuration="3000"
+            android:indeterminateOnly="true" />
+
+        <LinearLayout
+            style="@style/gs_both_match_parent"
+            android:layout_marginTop="@dimen/gs_lottery_title_height"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gs_lottery_going_tv"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp" >
+
+                <!--<com.gensee.view.LotteryImageView
+                    android:layout_width="@dimen/gs_lottery_image_width"
+                    android:layout_height="@dimen/gs_lottery_image_height" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_ly"
+        style="@style/gs_width_match_parent"
+        android:background="@color/gs_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lottery_title_ly"
+            style="@style/gs_width_match_parent"
+            android:layout_height="@dimen/gs_lottery_title_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/gs_lottery_title_hor" >
+
+            <TextView
+                android:id="@+id/lottery_title_tv"
+                style="@style/gs_width_match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/gs_lottery_title_tv"
+                android:textSize="@dimen/gs_lottery_title_tv" />
+
+            <ImageView
+                android:id="@+id/lottery_close_iv"
+                style="@style/gs_both_wrap_content"
+                android:background="@drawable/gs_close" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/gs_width_match_parent"
+            android:layout_height="1px"
+            android:background="@color/gs_card_page_title_line_tv" />
+    </LinearLayout>
+
+</RelativeLayout>

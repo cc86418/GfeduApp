@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/gs_chat_cannot_send_day" android:state_enabled="false" ></item>
+    <item android:color="@color/gs_chat_cannot_send_day" android:state_enabled="true" android:state_selected="false"></item>
+    <item android:color="@color/gs_chat_can_send_day" android:state_enabled="true" android:state_selected="true"></item>
+
+</selector>

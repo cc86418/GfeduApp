@@ -1,0 +1,191 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizags_dialogtions related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="gs_both_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="gs_both_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gs_width_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gs_height_match_parent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="gs_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="gs_DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="gs_DialogText.Title">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="gs_receive_float_right_img" parent="@style/gs_both_wrap_content">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/gs_cycle_gray_bg</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="gs_receive_float_bottom_img" parent="@style/gs_both_wrap_content">
+        <item name="android:background">@drawable/gs_cycle_gray_bg</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="gs_Dialog_Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <!-- 无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--无遮罩效果-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="gs_right_btn_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/gs_cycle_gray_bg</item>
+    </style>
+
+    <style name="gs_bottom_btn_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:background">@drawable/gs_cycle_gray_bg</item>
+    </style>
+
+    <style name="gs_reward_fixed_btn_style" >
+        <item name="android:layout_width">@dimen/gs_reward_btn_width</item>
+        <item name="android:layout_height">@dimen/gs_reward_btn_height</item>
+        <item name="android:background">@drawable/gs_selector_sponsor_sum</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/gs_selector_sponsor_sum_textcolor</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="tab_item_style" parent="@style/gs_both_wrap_content">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gs_tab_white</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="pop_more_item_ly" parent="@style/gs_width_match_parent">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="pop_more_style_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/pop_more_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/selector_pop_more_tv</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="pop_quality_style_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/pop_more_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/selector_pop_more_tv</item>
+    </style>
+
+    <style name="qa_tv" parent="@style/gs_width_match_parent">
+        <item name="android:textSize">@dimen/qa_item_content</item>
+        <item name="android:textColor">@color/qa_item_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="private_chat_tv" parent="@style/gs_both_wrap_content">
+        <item name="android:textSize">@dimen/private_to_name</item>
+        <item name="android:textColor">@color/private_time</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="private_chat_time_tv" parent="@style/gs_width_match_parent">
+        <item name="android:textSize">@dimen/private_time</item>
+        <item name="android:textColor">@color/private_time</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="private_chat_content_tv" parent="@style/gs_both_wrap_content">
+        <item name="android:textSize">@dimen/private_content</item>
+        <item name="android:textColor">@color/private_content</item>
+        <item name="android:paddingLeft">@dimen/private_content_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/private_content_paddingLeft</item>
+        <item name="android:paddingTop">@dimen/private_content_paddingLeft</item>
+        <item name="android:paddingBottom">@dimen/private_content_paddingLeft</item>
+    </style>
+
+    <style name="reward_empty_view">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="reward_empty_view_land">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+    <style name="gs_reward_fixed_btn_land_style" >
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">@dimen/gs_reward_btn_height</item>
+        <item name="android:background">@drawable/gs_selector_sponsor_sum</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/gs_selector_sponsor_sum_textcolor</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+</resources>

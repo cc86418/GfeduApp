@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gs_both_match_parent"
+    android:layout_marginTop="-5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.gensee.fastsdk.ui.view.xlistview.XListView
+            android:id="@+id/gs_chat_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent" >
+        </com.gensee.fastsdk.ui.view.xlistview.XListView>
+        <LinearLayout
+            android:id="@+id/ly_qa_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/doc_default_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@drawable/icon_no_qa"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/qa_no"
+                android:textColor="@color/nothing_text_color"
+                android:paddingTop="10dp"
+                android:textSize="12sp"
+                android:alpha="0.5"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.gensee.fastsdk.ui.view.xlistview.XListView
+            android:id="@+id/chat_my_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone"
+            android:listSelector="@android:color/transparent" >
+        </com.gensee.fastsdk.ui.view.xlistview.XListView>
+        <LinearLayout
+            android:id="@+id/ly_my_qa_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/doc_default_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@drawable/icon_no_qa"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/qa_no"
+                android:textColor="@color/nothing_text_color"
+                android:paddingTop="10dp"
+                android:textSize="12sp"
+                android:alpha="0.5"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

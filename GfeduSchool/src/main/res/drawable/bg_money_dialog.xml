@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!--30dp 透明-->
+        <shape>
+            <size android:height="30dp" />
+            <corners android:radius="10dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <!--下偏移30dp-->
+    <item android:top="10dp">
+        <shape>
+            <corners android:radius="10dp" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <!--&lt;!&ndash;用 bitmap 标签来保持原大小&ndash;&gt;-->
+    <!--<item>-->
+        <!--<bitmap-->
+            <!--android:gravity="center_horizontal|top"-->
+            <!--android:src="@drawable/adadad" />-->
+    <!--</item>-->
+</layer-list>

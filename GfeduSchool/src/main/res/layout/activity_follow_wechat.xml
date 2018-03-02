@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/spe_line_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerVertical="true"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spe_line_img">
+
+        <RelativeLayout
+            android:id="@+id/qr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/qr_follow_img"
+                android:layout_width="540px"
+                android:layout_height="540px"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="90px"
+                android:background="@drawable/item_studyhome_img"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qr_layout">
+
+            <TextView
+                android:id="@+id/hint_follow_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="26px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qrBtn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hint_layout">
+
+            <Button
+                android:id="@+id/followBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10px"
+                android:background="@drawable/login_button_bg"
+                android:text="关注微信公众号，点击进入微信，黏贴即可"
+                android:textColor="@color/white"
+                android:textSize="22px"
+                android:padding="20px"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

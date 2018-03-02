@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    >
+
+        <RelativeLayout
+            android:id="@+id/right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp" >
+
+            <ImageView
+                android:id="@+id/item_state_study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/expand_icon_weikaishi" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="3dp"
+            android:visibility="gone"
+            android:src="@drawable/expand_btn_weixuanzhong" />
+
+
+        <RelativeLayout
+            android:id="@+id/textview_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_toLeftOf="@+id/right_image" >
+
+            <TextView
+                android:id="@+id/tv_lesson_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111"
+                android:textColor="#575757"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_subjectname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_lesson_name"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:text="222"
+                android:textColor="#C8C8C8"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

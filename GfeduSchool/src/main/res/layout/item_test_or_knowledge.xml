@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px">
+
+        <TextView
+            android:id="@+id/courseName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:textColor="@color/banner_title_color"
+            android:textSize="28px"
+            tools:text="2017-第二章 会计政策和会计估计" />
+
+        <TextView
+            android:id="@+id/timeName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseName_txt"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px"
+            android:textColor="#c8c8c8"
+            android:textSize="22px"
+            tools:text="2018/1/2 10:30" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:id="@+id/reportExam_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/bg_history_organ_selcted_btn">
+
+                <TextView
+                    android:id="@+id/reportExam_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:padding="5px"
+                    android:textColor="@color/white"
+                    android:textSize="22px"
+                    tools:text="查看报告" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/againExam_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reportExam_layout"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/bg_history_organ_selcted_btn">
+
+                <TextView
+                    android:id="@+id/againExam_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:padding="5px"
+                    android:textColor="@color/white"
+                    android:textSize="22px"
+                    tools:text="重新做题" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddd" />
+    </RelativeLayout>
+</RelativeLayout>

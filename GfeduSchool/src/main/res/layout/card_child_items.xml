@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <jc.cici.android.atom.view.MyGridView
+        android:id="@+id/gridResult_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="20dp"
+        android:numColumns="5"
+        android:verticalSpacing="5dp">
+    </jc.cici.android.atom.view.MyGridView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"
+        android:layout_below="@+id/gridResult_view"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"/>
+</RelativeLayout>

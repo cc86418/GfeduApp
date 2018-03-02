@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 边缘线的宽度和颜色 -->
+    <stroke
+        android:width="1px"
+        android:color="#ffffff" />
+    <!-- 中间渐变，角度0从左往右，正值为逆时针，270度为从上到下 -->
+    <gradient
+        android:angle="0"
+        android:centerColor="#dd5555"
+        android:endColor="#EF8383"
+        android:startColor="#FDA8A8" />
+    <!-- 设置四个角的角度 -->
+    <corners
+        android:topLeftRadius="25px"
+        android:topRightRadius="25px" />
+</shape>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subDialog_layout"
+    android:layout_width="600px"
+    android:layout_height="300px"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/test_dialog_bg"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/txtdialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="62px"
+            android:text="温馨提示"
+            android:textColor="#333333"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdialog_layout"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="44px"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="时间到了~"
+            android:textColor="#666666"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btndialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2px">
+
+        <Button
+            android:id="@+id/sumbit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/spe_line"
+            android:background="#ffffff"
+            android:text="提交试卷"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="30px"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_submit_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/btndialog_layout"
+        android:background="#dddddd" />
+
+</RelativeLayout>

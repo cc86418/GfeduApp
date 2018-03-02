@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/spe_line_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerVertical="true"
+        android:background="#dddddd" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spe_line_img">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/continue_do_layout"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:background="@drawable/bg_coutinue_exam"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/title_continue_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/paperName_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="30px"
+                        android:textColor="@color/white"
+                        android:textSize="24px"
+                        tools:text="2017/03/20 试卷还没有做完" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/button_continue_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_continue_layout">
+
+                    <Button
+                        android:id="@+id/continueDo_btn"
+                        android:layout_width="180px"
+                        android:layout_height="45px"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20px"
+                        android:background="@drawable/bg_orgin_button"
+                        android:text="继续做题"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/examName_layout"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_below="@+id/continue_do_layout"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <RelativeLayout
+                    android:id="@+id/firstDo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px">
+
+                    <TextView
+                        android:id="@+id/nameHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="试卷名称:"
+                        android:textColor="#333333"
+                        android:textSize="30px" />
+
+                    <EditText
+                        android:id="@+id/examName_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/nameHint"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="#666666"
+                        android:textSize="28px"
+                        tools:text="2017-第二章 会计政策和会计估计" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dddddd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sort_layout"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_below="@+id/examName_layout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <RelativeLayout
+                    android:id="@+id/count_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/countHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="题目数量:"
+                        android:textColor="#333333"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/countHintDef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/countHint"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="20px"
+                        android:text="(默认20题)"
+                        android:textColor="#666666"
+                        android:textSize="28px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="44px"
+                    android:layout_toRightOf="@+id/count_layout">
+
+                    <com.jaygoo.widget.RangeSeekBar
+                        android:id="@+id/seekbar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        app:rsb_cellMode="number"
+                        app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+                        app:rsb_lineColorSelected="@color/colorAccent"
+                        app:rsb_markTextArray="@array/markArray"
+                        app:rsb_max="60"
+                        app:rsb_seekBarHeight="5px"
+                        app:rsb_seekBarMode="single"
+                        app:rsb_thumbResId="@drawable/seekbar_thumb" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selectType_layout"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_below="@+id/sort_layout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/orgTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="组卷类型:"
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/orgTxt"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/gridType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:columnWidth="10dp"
+                        android:focusable="true"
+                        android:numColumns="3"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/knowledgeSel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_below="@+id/selectType_layout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/knowledgeSel_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="知识点选择:"
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/knowledgeSel_txt"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/all_knowledge_btn"
+                        android:layout_width="150px"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/login_button_bg"
+                        android:text="所有知识点"
+                        android:textColor="@color/white"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/specify_know_btn"
+                        android:layout_width="150px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="指定知识点"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/knowledgeAimAt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_below="@+id/knowledgeSel_layout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/knowledgeAimAt_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="针对练习:"
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/knowledgeAimAt_txt"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/random_knowledge_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/login_button_bg"
+                        android:text="随机"
+                        android:textColor="@color/white"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/have_finish_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="已做"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/new_exam_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="全新题"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/error_exam_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="错题"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/examType_layout"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_below="@+id/knowledgeAimAt_layout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/knowledge_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="题型选择:"
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/knowledge_txt"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/random_Type_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/login_button_bg"
+                            android:text="随机"
+                            android:textColor="@color/white"
+                            android:textSize="22px" />
+
+                        <Button
+                            android:id="@+id/single_knowledge_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/button_register_bg"
+                            android:text="单选题"
+                            android:textColor="#333333"
+                            android:textSize="22px" />
+
+                        <Button
+                            android:id="@+id/mul_knowledge_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/button_register_bg"
+                            android:text="多选题"
+                            android:textColor="#333333"
+                            android:textSize="22px" />
+
+                        <Button
+                            android:id="@+id/judge_knowledge_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/button_register_bg"
+                            android:text="判断题"
+                            android:textColor="#333333"
+                            android:textSize="22px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/tiankong_knowledge_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/button_register_bg"
+                            android:text="填空题"
+                            android:textColor="#333333"
+                            android:textSize="22px" />
+
+                        <Button
+                            android:id="@+id/collect_knowledge_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/button_register_bg"
+                            android:text="综合题"
+                            android:textColor="#333333"
+                            android:textSize="22px" />
+
+                        <Button
+                            android:id="@+id/jianda_knowledge_btn"
+                            android:layout_width="110px"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/button_register_bg"
+                            android:text="简答题"
+                            android:textColor="#333333"
+                            android:textSize="22px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/degreeDifficulty"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_below="@+id/examType_layout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/degreeDifficulty_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="难度系数:"
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/degreeDifficulty_txt"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/random_diff_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/login_button_bg"
+                        android:text="随机"
+                        android:textColor="@color/white"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/difficulty_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="难"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/middle_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="中"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/easy_btn"
+                        android:layout_width="110px"
+                        android:layout_height="50px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20px"
+                        android:background="@drawable/button_register_bg"
+                        android:text="易"
+                        android:textColor="#333333"
+                        android:textSize="22px" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time_exam_layout"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_below="@+id/degreeDifficulty"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/timeExam_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20px"
+                    android:text="考试时长:"
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/timeExam_def_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/timeExam_txt"
+                    android:layout_marginTop="10px"
+                    android:text="默认(10)分钟"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/timeExam_txt">
+
+                    <com.jaygoo.widget.RangeSeekBar
+                        android:id="@+id/time_seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        app:rsb_cellMode="number"
+                        app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+                        app:rsb_lineColorSelected="@color/colorAccent"
+                        app:rsb_markTextArray="@array/markArray"
+                        app:rsb_max="60"
+                        app:rsb_seekBarHeight="5px"
+                        app:rsb_seekBarMode="single"
+                        app:rsb_thumbResId="@drawable/seekbar_thumb" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submit_exam_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/time_exam_layout"
+                android:layout_marginTop="20px"
+                android:background="#dd5555"
+                android:text="创建试卷"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

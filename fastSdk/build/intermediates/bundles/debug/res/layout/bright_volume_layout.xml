@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/volume_bright_ly"
+        style="@style/gs_both_match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="@dimen/volume_bright_width"
+            android:layout_height="@dimen/volume_bright_height"
+            android:background="@drawable/bright_volume_bg"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/volume_ly"
+                style="@style/gs_both_wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/volume_iv"
+                    style="@style/gs_both_wrap_content"
+                    android:background="@drawable/selector_volume_iv" />
+
+                <TextView
+                    android:id="@+id/volume_tv"
+                    style="@style/gs_both_wrap_content"
+                    android:layout_marginLeft="@dimen/volume_bright_padding"
+                    android:text="10%"
+                    android:textColor="@color/gs_white"
+                    android:textSize="@dimen/volume_bright_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bright_ly"
+                style="@style/gs_both_wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/bright_iv"
+                    style="@style/gs_both_wrap_content"
+                    android:background="@drawable/bright_on" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/bright_tv"
+                    style="@style/gs_both_wrap_content"
+                    android:layout_marginLeft="@dimen/volume_bright_padding"
+                    android:text="10%"
+                    android:textColor="@color/gs_white"
+                    android:textSize="@dimen/volume_bright_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

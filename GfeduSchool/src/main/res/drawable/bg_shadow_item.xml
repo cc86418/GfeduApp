@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Bottom 2dp Shadow ：底部阴影层-->
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="#f1f1f1" />
+            <corners android:radius="5dp" />
+            <gradient android:type="sweep"
+                android:startColor="#f1f1f1"
+                android:endColor="#ffffff"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+    <!-- White Top color：顶部层 -->
+    <item
+        android:bottom="2px"
+        android:left="2px"
+        android:right="2px"
+        android:top="2px">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/white" />
+            <corners android:radius="5dp" />
+            <padding android:bottom="5px"/>
+            <padding android:left="5px"/>
+            <padding android:top="5px"/>
+            <padding android:right="5px"/>
+            <!--设置边框 宽度=1px，颜色为skyBluesss-->
+            <stroke
+                android:width="3px"
+                android:color="#f1f1f1"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kline_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="根据您最近两次试卷答题情况生成"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/datishu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="答题量: 48题"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/zhengquelv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正确率: 48%"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="23dp"></lecho.lib.hellocharts.view.LineChartView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:background="#dd5555"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学习建议"
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xxjy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="36dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="123123123131322222222222222222222221231231231313222222222222222222222212312312313132222222222222222222222"
+        android:textSize="13sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="17dp">
+
+
+        <TextView
+            android:id="@+id/xxjy_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ckxqBtn"
+            android:layout_marginRight="40dp"
+            android:textColor="#333333"
+            android:layout_alignParentLeft="true"
+            android:lines="1"
+            android:text="131312313212333331313123132123333313131231321233333"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/ckxqBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff6157"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:text="查看详情"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:background="#dd5555"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薄弱知识点"
+            android:textColor="#333333"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/click_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/k_piont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/k_piont" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/k_piont"
+            android:layout_toLeftOf="@+id/k_jiantou"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="35dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="123131231231313131313131131"
+            android:textColor="#666666"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/k_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/k_right_jiantou" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/click_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/k_piont2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/k_piont" />
+
+        <TextView
+            android:id="@+id/item_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/k_piont2"
+            android:layout_toLeftOf="@+id/k_jiantou2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="35dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="123131231231313131313131131"
+            android:textColor="#666666"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/k_jiantou2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/k_right_jiantou" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/click_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/k_piont3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/k_piont" />
+
+        <TextView
+            android:id="@+id/item_title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/k_piont3"
+            android:layout_toLeftOf="@+id/k_jiantou3"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="35dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="123131231231313131313131131"
+            android:textColor="#666666"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/k_jiantou3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/k_right_jiantou" />
+
+    </RelativeLayout>
+
+</LinearLayout>

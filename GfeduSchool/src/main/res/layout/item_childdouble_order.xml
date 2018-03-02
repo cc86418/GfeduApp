@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/class_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36px">
+
+        <RelativeLayout
+            android:id="@+id/classImg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="150px"
+                android:layout_height="100px">
+
+                <ImageView
+                    android:id="@+id/courseImg"
+                    android:layout_width="150px"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/item_studyhome_img" />
+
+                <RelativeLayout
+                    android:id="@+id/orderFrom_layout"
+                    android:layout_width="150px"
+                    android:layout_height="30px"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_ordercourse"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/orderFrom_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@color/_ffffff"
+                        android:textSize="22px" />
+                </RelativeLayout>
+            </com.zhy.autolayout.AutoFrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/classContent_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_toRightOf="@+id/classImg_layout">
+
+            <RelativeLayout
+                android:id="@+id/classCourse_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/courseName_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40px"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.5"
+                    android:maxLines="2"
+                    android:textColor="#333333"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/count_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="x 1"
+                    android:textColor="@color/banner_title_color"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classTime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classCourse_layout"
+                android:layout_marginTop="24px">
+
+                <TextView
+                    android:id="@+id/courseTime_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classType_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classTime_layout"
+                android:layout_marginTop="24px">
+
+                <TextView
+                    android:id="@+id/courseType_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/classAddress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classType_layout"
+                android:layout_marginTop="24px">
+
+                <TextView
+                    android:id="@+id/courseAddress_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/studyTime_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classAddress_layout"
+                android:layout_marginTop="24px">
+
+                <TextView
+                    android:id="@+id/studyDate_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/studyPrice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/studyTime_layout"
+                android:layout_marginTop="24px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/studyPrice_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#ff0000"
+                    android:textSize="24px" />
+                <TextView
+                    android:id="@+id/studyOrigPrice_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/studyPrice_txt"
+                    android:layout_marginLeft="12px"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/class_layout"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="108px"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/present_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="30px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/presentName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="108px"
+            android:textColor="@color/banner_title_color"
+            android:textSize="24px"
+            android:maxLines="2"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/expand_Img"
+            android:layout_width="26px"
+            android:layout_height="13px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/icon_up" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/presentCon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/present_layout"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/llImg"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/presentCon_layout"
+        android:layout_marginLeft="108px"
+        android:layout_marginTop="20px"
+        android:background="#dddddd" />
+</RelativeLayout>

@@ -1,0 +1,172 @@
+{
+  "Code": 100,
+  "Message": "获取成功",
+  "Body": {
+    "StageName":"基础段",
+    "SubjectList": [
+      {
+        "SubjectId": 1,
+        "SubjectName":"职业伦理课程",
+        "LessonCount": 10,
+        "LessonStudyCount":5,
+        "LessonList":[
+          {
+            "LessonId": 56,
+            "LessonType":"1",
+            "LessonName":"职业伦理1" ,
+            "StudyStatus": 10 ,
+            "VideoTime":"145",
+            "LiveStartTime":"18:00",
+            "LiveEndTime":"19:00",
+            "PaperTime":"100",
+            "PaperQuesCount":25
+          },
+          {
+            "LessonId": 57,
+            "LessonType":"2",
+            "LessonName":"职业伦理2" ,
+            "StudyStatus": 15 ,
+            "VideoTime":"45",
+            "LiveStartTime":"21:00",
+            "LiveEndTime":"23:00",
+            "PaperTime":"200",
+            "PaperQuesCount":5
+          },
+          {
+            "LessonId": 58,
+            "LessonType":"1",
+            "LessonName":"职业伦理3" ,
+            "StudyStatus": 12 ,
+            "VideoTime":"40",
+            "LiveStartTime":"00:00",
+            "LiveEndTime":"00:00",
+            "PaperTime":"50",
+            "PaperQuesCount":20
+          }
+        ]
+      },
+      {
+        "SubjectId": 2,
+        "SubjectName":"专业测试课程",
+        "LessonCount": 10,
+        "LessonStudyCount":5,
+        "LessonList":[
+          {
+            "LessonId": 66,
+            "LessonType":"1",
+            "LessonName":"专业测试1" ,
+            "StudyStatus": 10 ,
+            "VideoTime":"145",
+            "LiveStartTime":"18:00",
+            "LiveEndTime":"19:00",
+            "PaperTime":"100",
+            "PaperQuesCount":25
+          },
+          {
+            "LessonId": 67,
+            "LessonType":"2",
+            "LessonName":"专业测试2" ,
+            "StudyStatus": 15 ,
+            "VideoTime":"45",
+            "LiveStartTime":"21:00",
+            "LiveEndTime":"23:00",
+            "PaperTime":"200",
+            "PaperQuesCount":5
+          },
+          {
+            "LessonId": 68,
+            "LessonType":"1",
+            "LessonName":"专业测试3" ,
+            "StudyStatus": 12 ,
+            "VideoTime":"40",
+            "LiveStartTime":"00:00",
+            "LiveEndTime":"00:00",
+            "PaperTime":"50",
+            "PaperQuesCount":20
+          }
+        ]
+      },{
+        "SubjectId": 3,
+        "SubjectName":"课余实践课程",
+        "LessonCount": 10,
+        "LessonStudyCount":5,
+        "LessonList":[
+          {
+            "LessonId": 76,
+            "LessonType":"1",
+            "LessonName":"课余实践1" ,
+            "StudyStatus": 10 ,
+            "VideoTime":"145",
+            "LiveStartTime":"18:00",
+            "LiveEndTime":"19:00",
+            "PaperTime":"100",
+            "PaperQuesCount":25
+          },
+          {
+            "LessonId": 77,
+            "LessonType":"2",
+            "LessonName":"课余实践2" ,
+            "StudyStatus": 15 ,
+            "VideoTime":"45",
+            "LiveStartTime":"21:00",
+            "LiveEndTime":"23:00",
+            "PaperTime":"200",
+            "PaperQuesCount":5
+          },
+          {
+            "LessonId": 78,
+            "LessonType":"1",
+            "LessonName":"课余实践3" ,
+            "StudyStatus": 12 ,
+            "VideoTime":"40",
+            "LiveStartTime":"00:00",
+            "LiveEndTime":"00:00",
+            "PaperTime":"50",
+            "PaperQuesCount":20
+          }
+        ]
+      },
+      {
+        "SubjectId": 4,
+        "SubjectName":"培训课程",
+        "LessonCount": 10,
+        "LessonStudyCount":5,
+        "LessonList":[
+          {
+            "LessonId": 40,
+            "LessonType":"1",
+            "LessonName":"培训1" ,
+            "StudyStatus": 10 ,
+            "VideoTime":"145",
+            "LiveStartTime":"18:00",
+            "LiveEndTime":"19:00",
+            "PaperTime":"100",
+            "PaperQuesCount":25
+          },
+          {
+            "LessonId": 41,
+            "LessonType":"2",
+            "LessonName":"培训2" ,
+            "StudyStatus": 15 ,
+            "VideoTime":"45",
+            "LiveStartTime":"21:00",
+            "LiveEndTime":"23:00",
+            "PaperTime":"200",
+            "PaperQuesCount":5
+          },
+          {
+            "LessonId": 42,
+            "LessonType":"1",
+            "LessonName":"培训3" ,
+            "StudyStatus": 12 ,
+            "VideoTime":"40",
+            "LiveStartTime":"00:00",
+            "LiveEndTime":"00:00",
+            "PaperTime":"50",
+            "PaperQuesCount":20
+          }
+        ]
+      }
+    ]
+  }
+}

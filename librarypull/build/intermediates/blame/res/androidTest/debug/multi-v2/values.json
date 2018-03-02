@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,243,296,346,409,475,537,600,663,954",
+                        "endLines": "2,3,4,5,6,7,8,9,10,11,18,21",
+                        "endColumns": "57,55,73,52,49,62,65,61,62,62,12,12",
+                        "endOffsets": "108,164,238,291,341,404,470,532,595,658,949,1109"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,169,243,296,346,409,475,537,600,663,954",
+                        "endLines": "2,3,4,5,6,7,8,9,10,11,18,21",
+                        "endColumns": "57,55,73,52,49,62,65,61,62,62,12,12",
+                        "endOffsets": "108,164,238,291,341,404,470,532,595,658,949,1109"
+                    }
+                }
+            ]
+        }
+    ]
+}

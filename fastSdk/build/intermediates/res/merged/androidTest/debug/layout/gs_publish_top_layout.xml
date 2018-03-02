@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gs_tv_room_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxEms="16"
+        android:gravity="center"
+        android:background="@drawable/gs_title_bg"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/gs_tv_room_title"
+        android:layout_alignTop="@id/gs_tv_room_title"
+        android:layout_alignBottom="@id/gs_tv_room_title"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/gs_iv_room_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/gs_ic_room_users" />
+                <TextView
+                    android:id="@+id/gs_tv_room_users"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/gs_iv_room_user"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/gs_white"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/gs_live_started_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="00:00:00"
+            android:textColor="@color/gs_white"
+            android:textSize="10sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gs_ly_tip_mount"
+        android:layout_below="@id/gs_tv_room_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gs_tip_sums_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gs_ic_rmb"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/gs_tv_out_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="0.00"
+            android:textColor="@color/gs_white"
+            android:textSize="10sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gs_ic_to_right_arrow"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/gs_gs_iv_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/gs_top_layout_margin"
+        android:layout_marginTop="@dimen/gs_top_layout_margin"
+        android:src="@drawable/gs_ic_exit" />
+
+</RelativeLayout>

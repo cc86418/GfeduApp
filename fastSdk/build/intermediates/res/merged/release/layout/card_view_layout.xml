@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="315dp"
+    android:layout_height="wrap_content"
+    android:background="@color/gs_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/card_title_ly"
+        style="@style/gs_width_match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/card_page_title_hor">
+
+        <TextView
+            android:id="@+id/card_title_tv"
+            style="@style/gs_width_match_parent"
+            android:layout_weight="1"
+            android:text="@string/card_expand_tip"
+            android:textColor="@color/card_page_title_tv"
+            android:textSize="@dimen/card_page_title_tv" />
+
+        <ImageView
+            android:id="@+id/card_page_suojin_iv"
+            style="@style/gs_both_wrap_content"
+            android:background="@drawable/card_suojin" />
+
+        <ImageView
+            android:id="@+id/card_page_close_iv"
+            style="@style/gs_both_wrap_content"
+            android:background="@drawable/gs_close"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/gs_width_match_parent"
+        android:layout_height="1px"
+        android:background="@color/card_page_content_tip_bg" />
+
+    <LinearLayout
+        android:id="@+id/card_publish_ly"
+        style="@style/gs_width_match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/gs_width_match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_page_content_tip_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/card_page_title_hor"
+            android:paddingTop="5dp"
+            android:text="@string/card_publish_tip"
+            android:textColor="@color/card_page_content_tip_tv"
+            android:textSize="@dimen/card_page_content_tip_tv" />
+
+        <LinearLayout
+            android:id="@+id/card_publish_option_ly"
+            style="@style/gs_width_match_parent"
+            android:layout_marginBottom="@dimen/card_page_publish_option_ver"
+            android:layout_marginTop="@dimen/card_page_publish_option_ver"
+            android:gravity="center"></LinearLayout>
+
+        <LinearLayout
+            style="@style/gs_width_match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/card_publish_commit_btn"
+                android:layout_width="@dimen/card_page_publish_btn_width"
+                android:layout_height="@dimen/card_page_publish_btn_height"
+                android:layout_marginBottom="@dimen/card_page_publish_bth_bottom"
+                android:background="@drawable/gs_pop_btn"
+                android:text="@string/card_page_publish_btn"
+                android:textColor="@color/gs_white"
+                android:textSize="@dimen/card_page_publish_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_result_publish_ly"
+        style="@style/gs_width_match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/card_result_publish_tip_ly"
+            style="@style/gs_width_match_parent"
+            android:background="@color/card_page_content_tip_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/card_page_title_hor"
+            android:paddingRight="@dimen/card_page_title_hor">
+
+            <LinearLayout
+                android:id="@+id/card_result_publish_teach_ly"
+                style="@style/gs_both_wrap_content"
+                android:layout_marginRight="22dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/card_result_publish_teach_tv"
+                    style="@style/gs_both_wrap_content"
+                    android:layout_height="@dimen/card_page_content_tip_height"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/card_page_content_tip_tv"
+                    android:textSize="@dimen/card_page_content_tip_tv" />
+
+                <ImageView
+                    android:id="@+id/card_result_publish_teach_iv"
+                    style="@style/gs_both_wrap_content"
+                    android:background="@drawable/selector_card_optoins_my_iv" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_result_publish_my_tv"
+                style="@style/gs_both_wrap_content"
+                android:layout_height="@dimen/card_page_content_tip_height"
+                android:gravity="center_vertical"
+                android:textColor="@color/card_page_content_tip_tv"
+                android:textSize="@dimen/card_page_content_tip_tv" />
+
+            <ImageView
+                android:id="@+id/card_result_publish_my_iv"
+                style="@style/gs_both_wrap_content"
+                android:background="@drawable/selector_card_optoins_my_iv" />
+
+            <TextView
+                style="@style/gs_width_match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/card_result_publish_total_tv"
+                style="@style/gs_both_wrap_content"
+                android:layout_height="@dimen/card_page_content_tip_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/card_page_title_hor"
+                android:textColor="#666666"
+                android:textSize="@dimen/card_page_content_tip_tv" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_result_publish_options_ly"
+            style="@style/gs_width_match_parent"
+            android:layout_marginBottom="@dimen/card_page_result_publish_options_bottom"
+            android:layout_marginTop="@dimen/card_page_result_publish_options_top"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/card_page_title_hor"
+            android:paddingRight="@dimen/card_page_title_hor"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_result_publish_bottom_tip_ly"
+            style="@style/gs_width_match_parent"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/card_result_publish_bottom_iv"
+                style="@style/gs_both_wrap_content"
+                android:background="@drawable/selector_vote_count_iv" />
+
+            <TextView
+                android:id="@+id/card_result_publish_bottom_tv"
+                style="@style/gs_both_wrap_content"
+                android:layout_marginLeft="9dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

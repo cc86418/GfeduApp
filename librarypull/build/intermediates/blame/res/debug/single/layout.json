@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\debug\\layout\\item_list_app.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\res\\layout\\item_list_app.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\res\\layout\\xlistview_header.xml"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\librarypull\\res\\layout\\xlistview_footer.xml"
+    }
+]

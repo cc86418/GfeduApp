@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_toLeftOf="@+id/Layout1_line"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/Layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <CheckBox
+            android:id="@+id/CheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/interest_item_button_selected"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="CFA"
+            android:textColor="@drawable/interest_item_textview_selected"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

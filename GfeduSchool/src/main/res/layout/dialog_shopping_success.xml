@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subDialog_layout"
+    android:layout_width="600px"
+    android:layout_height="300px"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/test_dialog_bg"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/txtdialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/txt_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="45px"
+                android:text="免费体验课已成功加入到学习列表"
+                android:textColor="#333333"
+                android:textSize="32px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dialog">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10px"
+                android:text="点击去学习跳转到学习列表"
+                android:textColor="#333333"
+                android:textSize="32px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btndialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2px">
+
+
+        <Button
+            android:id="@+id/goStudy_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/spe_line"
+            android:background="#ffffff"
+            android:text="去学习"
+            android:textColor="#666666"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_submit_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/btndialog_layout"
+        android:background="#dddddd" />
+
+</RelativeLayout>

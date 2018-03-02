@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="gs_sure">確認</string>
+    <string name="gs_sure_1">確定</string>
+    <string name="gs_join_reconnecting">網絡不給力，重連中...</string>
+    <string name="gs_i_known">我知道了</string>
+    <string name="gs_exit_webcast">確定退出直播？</string>
+    <string name="gs_end_webcast">確定結束直播？</string>
+    <string name="gs_cancel">取消</string>
+    <string name="gs_net_disconnect">網絡錯誤，請檢查網絡連接</string>
+    <string name="gs_exit_tip">正在退出...</string>
+    <string name="gs_net_have_disconnect">網絡連接已斷開...</string>
+    <string name="gs_net_have_disconnect_tip">網絡連接已斷開</string>
+    <string name="gs_net_connecting">網絡連接中，請稍候...</string>
+    <string name="gs_join_panelist">抱歉，G直播暫不支持嘉賓使用觀看，請您以普通參加者的身份加入。</string>
+
+    <!-- error code -->
+    <string name="gs_domain_error">請輸入正確的域名地址</string>
+    <string name="gs_error_data_timeout">數據過期</string>
+    <string name="gs_error_service">服務不正確</string>
+    <string name="gs_error_param">參數不正確</string>
+    <string name="gs_error_number_unexist">房間不存在</string>
+    <string name="gs_error_token">口令錯誤</string>
+    <string name="gs_error_login">用戶名或密碼錯誤</string>
+    <string name="gs_error_role">角色未選擇</string>
+    <string name="gs_error_fail_webcast">直播id不正確</string>
+    <string name="gs_error_webcast_unstart">未開始</string>
+    <string name="gs_error_isonly_web">只支持web</string>
+    <string name="gs_error_room_unenable">房間不可用</string>
+    <string name="gs_error_owner_error">內部問題</string>
+    <string name="gs_error_invalid_address">無效地址</string>
+    <string name="gs_error_room_overdue"> 過期</string>
+    <string name="gs_error_authourization_not_enough">授權不夠</string>
+    <string name="gs_error_untimely">太早</string>
+    <string name="gs_error_unsupport_mobile">不支持移動端</string>
+    <!-- xlistview -->
+    <string name="gs_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="gs_xlistview_header_hint_ready">鬆開刷新數據</string>
+    <string name="gs_xlistview_header_hint_loading">正在加載...</string>
+    <string name="gs_xlistview_header_last_time">上次更新時間：</string>
+    <string name="gs_xlistview_footer_hint_normal">查看更多</string>
+    <string name="gs_xlistview_footer_hint_ready">鬆開載入更多</string>
+    <!-- chat -->
+    <string name="gs_chat_send">發送</string>
+    <string name="gs_chat_sys">系統消息</string>
+    <string name="gs_chat_to">對</string>
+    <string name="gs_chat_me">我</string>
+    <string name="gs_chat_say">說</string>
+    <string name="gs_chat_only_me">只看我的聊天</string>
+    <string name="gs_chat_unenable">全員禁言</string>
+    <string name="gs_chat_quickly">發言太快了，先休息下</string>
+    <string name="gs_chat_publicchat_open">房間現在允許聊天</string>
+    <string name="gs_chat_publicchat_close">房間現在禁止聊天</string>
+    <string name="gs_chat_mode_only_pub">房間現在僅允許公共聊天</string>
+    <string name="gs_chat_mode_only_private">房間現在僅允許私人聊天</string>
+    <string name="chat_private_tip">您收到一條%s的私聊消息</string>
+    <string name="chat_bottom_private_tip">您收到%s的私聊消息</string>
+    <string name="chat_only_me">只看我的聊天</string>
+    <string name="chat_public_disable">當前禁止聊天，您的消息發送失敗</string>
+    <!-- qa -->
+    <string name="qa_reply_tip">%s回答了你的提問</string>
+    <string name="qa_wen">問</string>
+    <string name="qa_reply">回答</string>
+    <string name="qa_unenable">禁止提問禁</string>
+    <string name="qa_enable">允許提問</string>
+    <string name="qa_replying">回復中</string>
+    <string name="qa_voice_reply">[已加入語音回復列表]</string>
+    <string name="qa_voice_replying">[語音回復中]</string>
+    <string name="qa_voice_replied">[語音已回復]</string>
+    <string name="qa_only_me">只看我的問答</string>
+    <!-- private chat -->
+    <string name="chat_to_user_tip">正在和%s私聊</string>
+    <!-- tip -->
+    <string name="gs_leave_err_eject_tip">抱歉，您已被組織者踢出</string>
+    <string name="gs_leave_err_close_tip">本次直播已結束，謝謝觀看</string>
+    <string name="gs_leave_err_ip_deny">抱歉，您的ip已被封禁</string>
+    <!-- webcast -->
+    <string name="gs_leave_webcast_err_timeup">直播時間已過，點擊確定退出程序！</string>
+    <string name="gs_join_webcast_err_param">頁面已超時失效或者直播已經結束！請返回加入頁面重新輸入口令！</string>
+    <string name="gs_join_webcast_err_codec">指定的音頻編碼和當前直播不匹配，您無法加入直播！</string>
+    <string name="gs_join_webcast_err_host">該角色已存在，您無法再次加入！</string>
+    <string name="gs_join_webcast_err_license">當前並發數已滿，請稍後再試</string>
+    <string name="gs_join_webcast_err_locked">當前房間已經鎖定，您無法加入直播!</string>
+    <string name="gs_join_webcast_err_ip">抱歉，您無權進入該活動</string>
+    <string name="gs_join_webcast_err_third_auth">第三方認證失敗</string>
+    <string name="gs_join_webcast_err_too_early">活動尚未開始，請稍後再嘗試進入</string>
+    <string name="gs_join_webcast_timeout">連接超時</string>
+    <string name="gs_cast_status_ing">直播中</string>
+    <string name="gs_cast_status_pause">已暫停</string>
+    <string name="gs_cast_status_notstart">未開始</string>
+    <string name="gs_cast_status_end">已結束</string>
+    <!-- more -->
+    <string name="gs_net_3g">您正在使用非wifi網絡，觀看會產生流量資費，是否繼續觀看?</string>
+    <string name="gs_net_2g">您正在使用非wifi網絡，觀看會產生流量資費，是否繼續觀看?</string>
+    <string name="gs_net_4g">您正在使用非wifi網絡，觀看會產生流量資費，是否繼續觀看?</string>
+    <string name="gs_net_x_g_host">您正在使用非wifi網絡，發佈會產生流量資費，是否繼續觀看?</string>
+    <string name="gs_net_no_network">網絡已斷開，請檢查！</string>
+    <string name="gs_exit">退出</string>
+    <string name="gs_end">結束</string>
+    <string name="gs_continues">繼續</string>
+    <string name="gs_diagnosis_end">故障報告發送成功</string>
+    <string name="gs_diagnosis_ing">故障報告發送中...</string>
+    <string name="gs_diagnosis_fail">故障報告發送失敗</string>
+    <string  name="gs_reminder_open_mic">確定打開你的語音?</string>
+    <string name="gs_accept_mic_open">打開</string>
+    <string name="gs_accept_mic_refuse">拒絕</string>
+    <string  name="gs_reminder_open_mic_normal">邀請您加入語音互動</string>
+    <string  name="gs_reminder_open_camera_normal">邀請您加入視頻互動</string>
+    <!-- idc -->
+    <string name="gs_idc_title">優選網絡</string>
+    <string name="gs_idc_no_data">當前無可選網絡</string>
+    <!-- upgrade -->
+    <string name="gs_no_video">暫無視頻</string>
+    <string name="gs_audio_closed">語音已關閉</string>
+    <string name="gs_audio_opened">語音已打開</string>
+    <string name="gs_mic_hang_up">挂斷</string>
+    <string name="gs_mic_open">您的語音已打開</string>
+
+    <!-- bright volume -->
+    <string name="mute_volume">靜音</string>
+    <!-- pub client -->
+    <string name="gs_start_live">開始直播</string>
+    <string name="gs_live_pause">現在暫停直播</string>
+    <string name="gs_live_resume">直播即將恢復</string>
+
+    <!-- lod -->
+    <string name="gs_lod_is_on">當前插播正在進行中！若要正常使用手機直播，請先確定是否結束插播。</string>
+    <!-- as -->
+    <string name="gs_as_is_on_msg">當前正在桌面共享中，您的直播視頻暫時無法進行發佈。</string>
+    <string name="gs_package_no_camera_perssmion">無法獲取攝像頭數據，請在手機應用權限管理中心打開G直播的攝像頭權限</string>
+
+    <!-- beauty -->
+    <string name="gs_user_disable_chat">禁止發言</string>
+    <string name="gs_user_enable_chat">允許發言</string>
+    <string name="gs_user_eject">踢出該用戶</string>
+    <string name="gs_chat_host_join">(管理員)進來了</string>
+    <string name="gs_chat_host_leave">(管理員)離開了</string>
+    <string name="gs_chat_is_disable_to_chat">被禁言了</string>
+    <string name="gs_chat_is_alowed_to_chat">可以發言了</string>
+    <string name="gs_chat_is_kicked_out">被管理員請出了直播間</string>
+    <string name="gs_chat_activity_start">直播開始了</string>
+    <string name="gs_disable_somebody_chat">確定將此人禁言?</string>
+    <string name="gs_remove_somebody">確定踢出此人?</string>
+    <string name="gs_chat_forbid">抱歉，你已被组织者禁言</string>
+    <string name="gs_as_other_begin">桌面共享時不能發佈直播視頻，確定結束桌面共享嗎？ </string>
+    <string name="gs_as_is_on">桌面共享中...</string>
+    <string name="gs_as_video_active">直播視頻即將發佈</string>
+
+    <string name="gs_role_panelist_training">「 助教 」</string>
+    <string name="gs_role_panelist_webcast">「 嘉賓 」</string>
+    <string name="gs_role_normal_user">「 普通參加者 」</string>
+    <string name="gs_tip_board">打賞榜單</string>
+    <string name="gs_tip_total">合計：</string>
+    <string name="gs_tip_total_empty">親，還沒人給你打賞喲~加油!</string>
+    <string name="gs_tip_tiped">打賞了一個紅包</string>
+    <string name="gs_tip_server_fail">數據提交失敗，請重試</string>
+    <!--SDK3.5-->
+    <string name="gs_sponsor_Saying">「分君身上暖，感恩心缱绻」</string>
+    <string name="gs_sponsor_encouragement">還沒有人讚賞，快來當第一個讚賞人吧</string>
+    <string name="gs_sponsor_alipay">支付寶支付</string>
+    <string name="gs_sponsor_custom_sum">自定義金額</string>
+    <string name="gs_reward_text">打賞</string>
+
+    <!-- rollcall -->
+    <string name="rollcall_going">點名開始咯</string>
+    <string name="rollcall_finish">點名結束</string>
+    <string name="rollcall_roll">簽到</string>
+    <string name="rollcall_finish_tip">點名已經結束了</string>
+
+    <!-- vote -->
+    <string name="vote_commit">提交</string>
+    <string name="vote_force_tip">此問卷不能跳過哦，請努力完成吧</string>
+    <string name="vote_count_failure">不要灰心，再接再厲</string>
+    <string name="vote_count_success">恭喜您，通過了</string>
+    <string name="vote_count_good">您的表現棒極了</string>
+    <string name="vote_question_single">單選</string>
+    <string name="vote_question_multi">多選</string>
+    <string name="single_choice">【單選】</string>
+    <string name="multi_choice">【多選】</string>
+    <string name="text_choice">【問答】</string>
+    <string name="vote_please_dawan">請先答題再提交</string>
+    <string name="vote_please_dawan_all">您還未完成所有題目，請先完成</string>
+    <string name="vote_comment_failure">試卷提交失敗</string>
+    <string name="vote_text_join_count">參加人數：%s人</string>
+
+    <!-- card -->
+    <string name="card_expand_tip">答題卡</string>
+    <string name="card_publish_tip">題幹部分請留意PPT或者老師語言描述</string>
+    <string name="card_attent_count">共有%s人作答</string>
+    <string name="card_page_publish_btn">提交并關閉</string>
+    <string name="card_result_publish_teach">老師答案:</string>
+    <string name="card_result_publish_my">我的答案:</string>
+    <string name="card_result_success">恭喜您，通過了測試!</string>
+
+    <string name="doc_no_publish_doc">請點擊左下角文檔圖標,添加文檔~</string>
+    <string name="doc_no_watch_doc">沒有文檔,去別處看看~</string>
+    <string name="qa_no">專家為你答疑解惑</string>
+
+    <string name="video_audio_have_tip">當前您的音視頻仍在播放中，關閉后便不可再開啟 </string>
+    <string name="video_have_tip">當前您的視頻仍在播放中，關閉后便不可再開啟</string>
+    <string name="audio_have_tip">當前您的音頻仍在播放中，關閉后便不可再開啟</string>
+    <string name="doc">文檔</string>
+    <string name="chat">聊天</string>
+    <string name="video">视频</string>
+    <string name="qa">問答</string>
+    <string name="loading">加載中...</string>
+
+    <string name="diagnosis">故障報告</string>
+    <string name="switch_net">優選網絡</string>
+    <string name="new_msg_tip">%d條新消息</string>
+    <string name="chat_copy">複製</string>
+    <string name="user_offline">[離線]</string>
+    <string name="quality_sd">標清</string>
+    <string name="quality_hd">高清</string>
+
+    <string name="package_no_camera_perssmion">無法獲取攝像頭數據，請在手機應用權限管理中心打開G直播的攝像頭權限</string>
+
+    <string name="gs_no_content">暫無內容</string>
+    <string name="gs_live_pause_tip">休息下吧~</string>
+</resources>

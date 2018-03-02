@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jc.cici.android">
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.mount_unmount_filesystems" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <application
+        android:name="cn.gfedu.gfeduapp.GfeduApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="icon">
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 设计稿给出的原始尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="720"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1280"></meta-data>
+        <!-- 设计稿给出的原始尺寸 -->
+
+
+        <!--<activity android:name="cn.gfedu.gfeduapp.MainActivity">-->
+        <activity android:name="cn.jun.LogoPager.LogoPagerActivity">
+            <!--<activity android:name="cn.jun.indexmain.IndexActivity">-->
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".atom.ui.login.NormalActivity" />
+        <activity android:name=".atom.ui.login.ResetActivity" />
+        <activity android:name=".atom.ui.login.RegisterActivity" />
+        <activity android:name=".atom.ui.login.NoticeActivity" />
+        <activity android:name=".atom.ui.login.OtherLoginActivity" />
+        <activity android:name=".atom.ui.login.FastLoginActivity" />
+        <activity android:name=".atom.ui.login.ResetPwdActivity" />
+        <activity android:name=".atom.ui.login.ImproveActivity" />
+        <activity android:name=".atom.ui.study.CheckLoginActivity" />
+        <activity android:name=".atom.ui.study.StudyDetailActivity" />
+        <activity android:name=".atom.ui.study.CourseDetialActivity" />
+        <activity android:name=".atom.ui.study.HistoryActivity" />
+        <activity android:name=".atom.ui.study.SearchActivity" />
+        <activity android:name=".atom.ui.study.ChapterActivity" />
+        <activity android:name=".google.zxing.activity.CaptureActivity" />
+        <activity android:name=".atom.ui.note.NoteAllActivity" />
+        <activity android:name=".atom.ui.note.KnowledgeSelectAc" />
+        <activity android:name=".atom.ui.note.ProgramActivity" />
+        <activity android:name=".atom.ui.note.ChapterContentAc" />
+        <activity android:name=".atom.ui.note.OnLineSelectAc" />
+        <activity android:name=".atom.ui.note.FaceToFaceActivity" />
+        <activity android:name=".atom.ui.note.AddNoteActivity" />
+        <activity android:name=".atom.ui.note.NoteDetailActivity" />
+        <activity android:name=".atom.ui.note.QuestionAllActivity" />
+        <activity android:name=".atom.ui.note.GalleryActivity" />
+        <activity android:name=".atom.ui.note.QuestionDetailActivity" />
+        <activity android:name=".atom.ui.note.AnswerDetailActivity" />
+        <activity
+            android:name=".atom.ui.note.CommentActivity"
+            android:windowSoftInputMode="adjustResize|adjustUnspecified|stateHidden" />
+        <activity android:name=".atom.ui.tiku.CardAnswer" />
+        <activity android:name=".atom.ui.tiku.CardResultActivity" />
+        <activity android:name=".atom.ui.tiku.MyQuestionActivity" />
+        <activity android:name=".atom.ui.tiku.WrongAnalysisActivity" />
+        <activity android:name=".atom.ui.tiku.AnalysisActivity" />
+        <activity android:name=".atom.ui.note.NoteSearchActivity" />
+        <activity android:name=".atom.ui.note.QuestionSearchAc" />
+        <activity android:name=".atom.ui.note.MyAnswerSearchAc" />
+        <activity
+            android:name=".atom.ui.study.CourseFormActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".atom.ui.study.FinishPersonInfoActivity"
+            android:launchMode="singleTask" />
+        <!-- 选课 add by atom 2017-7-31 -->
+        <activity android:name=".atom.ui.courselist.SubCourseActivity" />
+        <activity
+            android:name=".atom.ui.courselist.SearchCourseActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".atom.ui.courselist.AllCourseAcitivity"
+            android:hardwareAccelerated="false" />
+        <!-- 选课 add by atom 2017-8-21 -->
+        <activity
+            android:name=".atom.ui.shopCart.ShopCartActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".atom.ui.shopCart.EditAddressAc" />
+        <activity android:name=".atom.ui.shopCart.AddAddressAc" />
+        <activity android:name=".atom.ui.shopCart.BillActivity" />
+        <activity android:name=".atom.ui.shopCart.BillContentActivity" />
+        <activity android:name=".atom.ui.shopCart.PayDetailActivity" />
+        <activity android:name=".atom.ui.shopCart.FinishPayActivity" />
+        <activity android:name=".atom.ui.shopCart.AddressManagerAc" />
+        <!--add aliPay by atom  2017-11-16 -->
+        <!--add by atom tiku 2017-12-21 -->
+        <activity android:name=".atom.ui.tiku.MoreActivity" />
+        <activity android:name=".atom.ui.tiku.FollowWechatActivity" />
+        <activity
+            android:name=".atom.ui.tiku.OrganExamActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".atom.ui.tiku.HistoryOrganExamActivity"/>
+        <activity android:name=".atom.ui.tiku.ChapterPracticeAc"/>
+        <activity android:name=".atom.ui.tiku.ErrorSetActivity"/>
+        <activity android:name=".atom.ui.tiku.newDoExam.KnowledgeTestActivity"/>
+        <activity android:name=".atom.ui.tiku.newDoExam.RecordDoExamAc"/>
+        <activity android:name=".atom.ui.tiku.newDoExam.EveryDayTestAc"/>
+        <activity android:name=".atom.ui.tiku.newDoExam.TestActivity"/>
+        <!--add by atom tiku 2017-12-21 -->
+        <!--add by atom tiku 2017-12-21 -->
+        <activity android:name=".atom.ui.tiku.newDoExam.OrganTestActivity"/>
+        <!--add by atom tiku 2017-12-21 -->
+        <activity
+            android:name=".atom.ui.live.LiveListActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".atom.ui.live.LiveSearchActivity"
+            android:hardwareAccelerated="false" />
+        <!--add aliPay by atom  2017-11-16 -->
+        <activity
+            android:name=".atom.ui.shopCart.EnsureOrderAc"
+            android:hardwareAccelerated="false" />
+
+        <activity
+            android:name=".atom.ui.order.OrderHomeActivity"
+            android:hardwareAccelerated="false" />
+        <activity
+            android:name=".atom.ui.order.OrderDetailActivity"
+            android:hardwareAccelerated="false" />
+
+        <!--add aliPay by atom  2017-8-29 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <!--add aliPay by atom  2017-8-29 -->
+
+        <!--add by atom weChatPay 2017-9-19 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx47b381963fec27aa" />
+            </intent-filter>
+
+        </activity>
+        <!--add by atom weChatPay 2017-9-19 -->
+
+
+        <service android:name="cn.jun.menory.service.PolyvDemoService" />
+
+        <activity android:name="cn.gfedu.gfeduapp.MainActivity" />
+        <activity android:name="cn.jun.viewactivity.AlbumActivity" />
+        <activity android:name="cn.jun.mysetting.Setting" />
+        <activity
+            android:name="cn.jun.mysetting.Information"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="cn.jun.mysetting.Interests"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.BingMail"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.SetPassWord"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.ChangeTelPhone"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.ChangeTelNext"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.menory.VideoBufferFragmentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.onlineclass.OnlineClassActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.LogoPager.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.OverClassListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.menory.manage_activity.ManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.FeedBack" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.About" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.HelpCenter" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.live.LiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.courseinfo.activity.ConsultationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="cn.jun.courseinfo.activity.OnlineCourseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity android:name="cn.jun.courseinfo.activity.OnlineCourseDetailsAloneActivity"/>-->
+        <activity
+            android:name="cn.jun.courseinfo.activity.OnlineCourseDetailsAloneActivityTwo"
+            android:screenOrientation="portrait" />
+        <activity android:name="cn.jun.courseinfo.activity.ServerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.gfedu.gfeduapp.NetActivity" />
+        <activity android:name="cn.jun.courseinfo.activity.ClassCourseCartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.courseinfo.activity.MealCourseCartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.MyCollection.MyCollection" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.logistics.LogisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.ShiZiPingYi" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.mysetting.ShiZiPingYi_Edit" android:screenOrientation="portrait" />
+        <activity android:name="cn.jun.mysetting.ShiZiOver" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.NotificationCenter.NotificatioCenterActivity" />
+        <activity android:name="cn.jun.NotificationCenter.NotifiInfoActivity" />
+        <activity android:name="cn.jun.live.MyLiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.live.LiveClassActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.live.LiveClassXiLieActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.live.LiveH5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.live.LiveRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.live.vod.PlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"/>
+        <activity android:name="cn.jun.live.vod.VodRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.view.CapacityAssessment"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.view.KLineView"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cn.jun.view.BRZSDActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="cn.jun.pushMessage.PushMessage_Service" />
+
+        <activity
+            android:name="cn.jun.courseinfo.polyvplayer.C_IjkVideoActicity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+
+        <activity
+            android:name="cn.jun.VerticalScreen.VerticalScreenActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.jun.VerticalScreen.VerticalScreenNextLastActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lling.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jun.polyv.IjkVideoActicity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+
+        /**展示互动**/
+        <activity
+            android:name="com.gensee.fastsdk.ui.portrait.PublishActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <activity
+            android:name="com.gensee.fastsdk.ui.landscape.LandscapePubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <activity
+            android:name="com.gensee.fastsdk.ui.portrait.WatchActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <activity
+            android:name="com.gensee.fastsdk.ui.LiveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+
+        <!-- 友盟第三方登录 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58f96d861c5dd06b6e000ff2"></meta-data>
+
+        <activity
+            android:name="jc.cici.android.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104520651" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="jc.cici.android.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- 友盟第三方登录 -->
+
+    </application>
+
+</manifest>

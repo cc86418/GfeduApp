@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/private_top" >
+
+    <LinearLayout
+        android:id="@+id/private_chat_to_lay"
+        style="@style/gs_width_match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            style="@style/gs_width_match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/private_item_title_iv"
+                style="@style/gs_both_wrap_content"
+                android:layout_marginLeft="@dimen/private_item_title_left1"
+                android:layout_marginRight="@dimen/private_item_title_left2"
+                android:background="@drawable/private_gray" />
+
+            <TextView
+                android:id="@+id/privat_chat_to_name_tv"
+                style="@style/private_chat_tv"
+                android:text="lll" />
+
+            <TextView
+                android:id="@+id/private_chat_to_time_tv"
+                style="@style/private_chat_time_tv"
+                android:layout_marginLeft="@dimen/private_item_time_left"
+                android:textSize="@dimen/private_item_text_size"
+                android:text="00:00:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/private_chat_to_content_ly"
+            style="@style/gs_both_wrap_content"
+            android:layout_marginLeft="@dimen/private_item_content_left"
+            android:layout_marginRight="@dimen/private_item_content_margin"
+            android:layout_marginTop="@dimen/private_item_ver"
+            android:background="@drawable/privat_me_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.gensee.view.MyTextViewEx
+                android:id="@+id/private_chat_to_content_tv"
+                style="@style/private_chat_content_tv"
+                android:text="laksdlf" >
+            </com.gensee.view.MyTextViewEx>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/private_chat_me_lay"
+        style="@style/gs_width_match_parent"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/gs_width_match_parent"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/private_chat_me_time_tv"
+                style="@style/private_chat_time_tv"
+                android:layout_marginRight="@dimen/private_item_time_left"
+                android:gravity="center_vertical|right"
+                android:text="00:00:00" />
+
+            <TextView
+                android:id="@+id/privat_chat_me_name_tv"
+                style="@style/private_chat_tv"
+                android:text="lll" />
+
+            <ImageView
+                style="@style/gs_both_wrap_content"
+                android:layout_marginLeft="@dimen/private_item_title_left2"
+                android:layout_marginRight="@dimen/private_item_title_left1"
+                android:background="@drawable/private_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gs_both_wrap_content"
+            android:layout_marginLeft="@dimen/private_item_content_margin"
+            android:layout_marginRight="@dimen/private_item_content_left"
+            android:layout_marginTop="@dimen/private_item_ver"
+            android:background="@drawable/private_to_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.gensee.view.MyTextViewEx
+                android:id="@+id/private_chat_me_content_tv"
+                style="@style/private_chat_content_tv"
+                android:textColor="@color/private_me_content"
+                android:text="laksdlf" >
+            </com.gensee.view.MyTextViewEx>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

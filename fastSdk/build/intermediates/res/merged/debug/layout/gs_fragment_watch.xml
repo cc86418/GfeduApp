@@ -1,0 +1,248 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gs_video_no_video_bg"
+    tools:context="com.gensee.fastsdk.ui.portrait.WatchFragment">
+
+    <RelativeLayout
+        android:id="@+id/gs_rlVideoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.gensee.view.GSVideoViewEx
+            android:id="@+id/gs_videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/gs_iv_audioView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gs_tv_title"
+        android:adjustViewBounds="true"
+        android:background="@drawable/gs_audio_default"
+        android:src="@drawable/gs_audio_default_content"
+        android:visibility="gone" />
+
+    <!--danmaku-->
+    <RelativeLayout
+        android:id="@+id/gs_ly_danmakuView"
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+            android:id="@+id/gs_danmukuView"
+            android:background="@color/gs_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gs_relDef"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/gs_txtVideoDef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="15dp"
+            android:drawableTop="@drawable/gs_icon_video_def"
+            android:gravity="center"
+            android:text="@string/gs_no_video"
+            android:textColor="@color/gs_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gs_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="11"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/gs_ts_title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gs_tv_title"
+        android:layout_alignTop="@+id/gs_tv_title"
+        android:layout_toRightOf="@+id/gs_tv_title">
+
+        <TextView
+            android:id="@+id/gs_tv_topState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/gs_shape_top_state"
+            android:paddingBottom="1dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="1dp"
+            android:text="@string/gs_cast_status_notstart"
+            android:textColor="#000000"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/gs_relAudioDef"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gs_audio_default"
+        android:visibility="gone">
+
+        <ImageView
+            style="@style/gs_both_wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gs_audio_default_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gs_rl_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff">
+
+        <ImageView
+            android:id="@+id/gs_gs_iv_exit"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/gs_normal_margin"
+            android:src="@drawable/gs_ic_exit" />
+
+        <ImageView
+            android:id="@+id/gs_iv_chat"
+            android:layout_width="@dimen/gs_ic_width"
+            android:layout_height="@dimen/gs_ic_width"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/gs_ic_margin"
+            android:layout_marginLeft="@dimen/gs_ic_margin"
+            android:background="@drawable/gs_cycle_gray_bg"
+            android:src="@drawable/gs_ic_start_chat" />
+
+        <ImageView
+            android:id="@+id/gs_iv_net"
+            android:layout_width="@dimen/gs_ic_width"
+            android:layout_height="@dimen/gs_ic_width"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/gs_ic_margin"
+            android:layout_marginRight="@dimen/gs_ic_margin"
+            android:background="@drawable/gs_cycle_gray_bg"
+            android:src="@drawable/gs_ic_change_line" />
+
+        <ImageView
+            android:id="@+id/gs_iv_bugReport"
+            android:layout_width="@dimen/gs_ic_width"
+            android:layout_height="@dimen/gs_ic_width"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/gs_ic_margin"
+            android:layout_marginRight="@dimen/gs_ic_margin"
+            android:layout_toLeftOf="@+id/gs_iv_net"
+            android:background="@drawable/gs_cycle_gray_bg"
+            android:src="@drawable/gs_ic_report_bug" />
+
+        <ImageView
+            android:id="@+id/gs_iv_sponsor"
+            android:layout_width="@dimen/gs_ic_width"
+            android:layout_height="@dimen/gs_ic_width"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/gs_ic_margin"
+            android:background="@drawable/gs_ic_sponsor"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/gs_rl_chat"
+        android:layout_width="@dimen/gs_chat_width"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gs_relDef"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ffffff"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <com.gensee.fastsdk.ui.view.xlistview.XListView
+            android:id="@+id/gs_chat_lv"
+            style="@style/gs_both_match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:stackFromBottom="true"></com.gensee.fastsdk.ui.view.xlistview.XListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/gs_ly_idc"
+            layout="@layout/gs_idc_layout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gs_rl_audio_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/gs_relDef"
+        android:layout_alignTop="@id/gs_relDef">
+
+        <RelativeLayout
+            android:id="@+id/gs_rl_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/gs_bg_hang_up"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/gs_iv_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/gs_ic_hang_up" />
+
+            <TextView
+                android:id="@+id/gs_tv_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/gs_iv_audio"
+                android:gravity="center_vertical"
+                android:text="@string/gs_mic_hang_up"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/gs_reward_layout"/>
+</RelativeLayout>

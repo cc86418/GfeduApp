@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="已成功发送绑定链接"
+        android:textColor="@color/my_tvcolor"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/edit_massage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textColor="@color/my_tvcolor3"
+        android:textSize="14sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/zj"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/zj"
+            android:background="@drawable/btn_redbg"
+            android:text="返回设置"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/zj"
+            android:background="@drawable/btn_whritebg"
+            android:text="更改邮箱"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@null"/>
+</LinearLayout>

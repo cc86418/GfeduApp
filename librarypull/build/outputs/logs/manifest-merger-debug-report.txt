@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:1-19:12
+	package
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:3:5-61
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:5:5-30
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:4:5-28
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml
+uses-sdk
+ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:7:5-10:8
+	android:targetSdkVersion
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:9:9-38
+	android:minSdkVersion
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:8:9-34
+application
+ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:12:5-17:19
+	android:label
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:14:9-45
+	android:allowBackup
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from D:\StudioWorkSpaec\GfeduApp\librarypull\AndroidManifest.xml:16:9-40

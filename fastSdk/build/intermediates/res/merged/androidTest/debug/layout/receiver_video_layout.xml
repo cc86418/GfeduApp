@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/rlVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gensee.view.GSVideoViewEx
+            android:id="@+id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <!--<com.gensee.view.GSAutoDecodeView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/gsHardDecodeView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" />-->
+    </RelativeLayout>
+
+
+<!-- 小窗置为直播视频 -->
+    <RelativeLayout android:id="@+id/actived_rl"
+        android:layout_width="match_parent"
+        android:layout_height= "match_parent">
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relDef"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gs_video_no_video_bg" >
+
+        <TextView
+            android:id="@+id/txtVideoDef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="15dp"
+            android:drawableTop="@drawable/icon_video_def"
+            android:gravity="center"
+            android:text="@string/gs_no_video"
+            android:textColor="@color/gs_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relAudioDef"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gs_audio_default"
+        android:visibility="gone" >
+        <ImageView style="@style/gs_both_wrap_content"
+            android:id="@+id/ivAudioDef"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_audio_play_bg_iv"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/gs_video_no_video_bg"
+        android:id="@+id/live_pause_ly"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:background="@drawable/gs_live_pause"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/live_pause_tv"
+            android:text="@string/gs_live_pause_tip"
+            android:layout_width="wrap_content"
+            android:textColor="@color/gs_white"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+            
+    <LinearLayout
+        android:id="@+id/ll_float_right_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <include layout="@layout/receiver_float_right_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_float_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/receiver_float_bottom_bar" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/bright_volume_layout">
+        </include>
+    </LinearLayout>
+
+</RelativeLayout>

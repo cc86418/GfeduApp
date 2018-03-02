@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/spe_line_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerVertical="true"
+        android:background="#dddddd" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spe_line_img">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+        <jc.cici.android.atom.view.AutoCardView
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:layout_margin="30px"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:id="@+id/item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iconMore_img"
+                    android:layout_width="94px"
+                    android:layout_height="94px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/icon_kaoyan" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="22px"
+                    android:layout_toRightOf="@+id/iconMore_img"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/moreTitle_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10px"
+                        android:textColor="#333333"
+                        android:textSize="30px"
+                        android:text="金程考研--科技让学习更有效" />
+
+                    <TextView
+                        android:id="@+id/moreDetail_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingRight="10px"
+                        android:paddingTop="18px"
+                        android:textColor="#666666"
+                        android:textSize="28px"
+                        android:text="金程考研app是一款高效助力学习的软件课程安排一目了然，随时随地学习，还有师兄师姐师弟师妹共同学习分享。班主任一对一督导，助力您成功考研" />
+                </LinearLayout>
+            </RelativeLayout>
+        </jc.cici.android.atom.view.AutoCardView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/emptyView"
+        android:layout_width="142px"
+        android:layout_height="194px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/nothing_bg"
+        android:visibility="gone" />
+</RelativeLayout>

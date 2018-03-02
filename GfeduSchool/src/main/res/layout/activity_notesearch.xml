@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd" />
+
+        <RelativeLayout
+            android:id="@+id/searchBtn_layout"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px">
+
+            <TextView
+                android:id="@+id/searchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:background="#fbfbfb"
+                android:text="@string/cancel_txt"
+                android:textColor="@color/error_hint_txt_color"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toLeftOf="@+id/searchBtn_layout"
+            android:background="@drawable/input_bg">
+
+            <ImageView
+                android:id="@+id/searchLogo_img"
+                android:layout_width="24px"
+                android:layout_height="26px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="16px"
+                android:src="@drawable/icon_search_logo" />
+
+            <EditText
+                android:id="@+id/search_inputTxt"
+                android:layout_width="match_parent"
+                android:layout_height="68px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/searchLogo_img"
+                android:layout_marginLeft="18px"
+                android:background="@null"
+                android:hint="@string/input_noteHint_txt"
+                android:textColor="#575757"
+                android:textColorHint="#aaaaaa"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/edit_layout"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/recyclerView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/emptyView"
+        android:layout_width="142px"
+        android:layout_height="194px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/nothing_bg"
+        android:visibility="gone" />
+</RelativeLayout>

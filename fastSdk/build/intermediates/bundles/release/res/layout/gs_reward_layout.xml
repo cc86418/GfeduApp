@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gs_reward_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:visibility="gone">
+
+    <View
+        android:id="@+id/gs_view_cover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gs_transparent" />
+
+    <LinearLayout
+        android:id="@+id/gs_ll_sponsor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gs_tv_sponsor_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#666666"
+            android:textSize="18sp"
+            android:text="@string/gs_reward_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/gs_sponsor_Saying"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/gs_ll_sponsor_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/gs_ll_sponsor_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <RelativeLayout
+                    android:id="@+id/gs_rl_sum1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left">
+                    <TextView
+                        android:id="@+id/gs_tv_sum1"
+                        style="@style/gs_reward_fixed_btn_style"
+                        android:text="¥1.00"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/gs_rl_sum5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/gs_tv_sum5"
+                        style="@style/gs_reward_fixed_btn_style"
+                        android:text="¥5.00" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/gs_rl_sum10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/gs_tv_sum10"
+                        style="@style/gs_reward_fixed_btn_style"
+                        android:text="¥10.00"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gs_ll_sponsor_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/gs_rl_sum20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/gs_tv_sum20"
+                        android:text="¥20.00"
+                        style="@style/gs_reward_fixed_btn_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gs_rl_sum50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/gs_tv_sum50"
+                        android:text="¥50.00"
+                        style="@style/gs_reward_fixed_btn_style"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gs_rl_sum100"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/gs_tv_sum100"
+                        android:text="¥100.00"
+                        style="@style/gs_reward_fixed_btn_style"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/gs_ll_sponsor_line_land"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/gs_rl_sum1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/gs_tv_sum1_1"
+                    style="@style/gs_reward_fixed_btn_land_style"
+                    android:text="¥1.00"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gs_rl_sum5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <View style="@style/reward_empty_view_land" />
+                <TextView
+                    android:id="@+id/gs_tv_sum5_1"
+                    style="@style/gs_reward_fixed_btn_land_style"
+                    android:text="¥5.00" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gs_rl_sum10_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <View style="@style/reward_empty_view_land" />
+                <TextView
+                    android:id="@+id/gs_tv_sum10_1"
+                    style="@style/gs_reward_fixed_btn_land_style"
+                    android:text="¥10.00"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gs_rl_sum20_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <View style="@style/reward_empty_view_land" />
+                <TextView
+                    android:id="@+id/gs_tv_sum20_1"
+                    android:text="¥20.00"
+                    style="@style/gs_reward_fixed_btn_land_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gs_rl_sum50_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <View style="@style/reward_empty_view_land" />
+                <TextView
+                    android:id="@+id/gs_tv_sum50_1"
+                    android:text="¥50.00"
+                    style="@style/gs_reward_fixed_btn_land_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gs_rl_sum100_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <View style="@style/reward_empty_view_land" />
+                <TextView
+                    android:id="@+id/gs_tv_sum100_1"
+                    android:text="¥100.00"
+                    style="@style/gs_reward_fixed_btn_land_style"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gs_tv_custom_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/gs_sponsor_custom_sum"
+            android:textColor="#3886ef"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gs_tv_alipay_commit"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/gs_ic_sponsor_selected"
+            android:gravity="center"
+            android:text="@string/gs_sponsor_alipay"
+            android:textColor="@color/gs_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

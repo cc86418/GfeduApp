@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctv_text"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:clickable="false"
+    android:ellipsize="end"
+    android:gravity="center_horizontal|center_vertical"
+    android:maxLines="3"
+    android:orientation="vertical"
+
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    android:textColor="@color/selector_red_or_black"
+    android:textSize="12sp"
+    tools:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试">
+
+</CheckedTextView>

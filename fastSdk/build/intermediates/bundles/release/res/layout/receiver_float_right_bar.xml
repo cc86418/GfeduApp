@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rightBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linHand"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/gs_cycle_gray_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_hand" />
+
+            <TextView
+                android:id="@+id/txtHandTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/gs_white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgReward"
+            style="@style/gs_receive_float_right_img"
+            android:src="@drawable/ic_reward"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgStartChat"
+            style="@style/gs_receive_float_right_img"
+            android:src="@drawable/gs_ic_start_chat" />
+
+    </LinearLayout>
+</LinearLayout>

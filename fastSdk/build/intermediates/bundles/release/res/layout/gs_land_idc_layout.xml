@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/gs_idc_max_ver"
+    android:layout_marginTop="@dimen/gs_idc_max_ver"
+    android:background="@color/gs_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/gs_width_match_parent"
+        android:layout_height="@dimen/gs_idc_title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/gs_idc_title_left" >
+
+        <TextView
+            style="@style/gs_width_match_parent"
+            android:layout_weight="1"
+            android:text="@string/gs_idc_title"
+            android:textColor="@color/gs_idc_title_tv"
+            android:textSize="@dimen/gs_idc_title_tv" />
+
+        <ImageView
+            android:id="@+id/gs_idc_close_iv"
+            style="@style/gs_both_wrap_content"
+            android:background="@drawable/gs_close" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/gs_width_match_parent"
+        android:layout_height="1px"
+        android:background="@color/gs_card_page_title_line_tv" />
+
+    <RelativeLayout style="@style/gs_width_match_parent" >
+
+        <LinearLayout
+            style="@style/gs_width_match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ScrollView
+                style="@style/gs_both_match_parent"
+                android:layout_weight="1"
+                android:fadeScrollbars="false" >
+
+                <LinearLayout
+                    android:id="@+id/gs_idc_content_ly"
+                    style="@style/gs_both_match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/gs_idc_content_left"
+                    android:paddingRight="@dimen/gs_idc_content_left"
+                    android:paddingTop="@dimen/gs_idc_content_top" >
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/gs_idc_sure_btn"
+                android:layout_width="@dimen/gs_idc_width_btn"
+                android:layout_height="@dimen/gs_idc_height_btn"
+                android:layout_marginBottom="@dimen/gs_idc_btn_bottom"
+                android:layout_marginTop="@dimen/gs_idc_btn_top"
+                android:background="@drawable/gs_pop_btn"
+                android:gravity="center"
+                android:text="@string/gs_sure"
+                android:textColor="@color/gs_white"
+                android:textSize="@dimen/gs_idc_btn_tv" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gs_width_match_parent"
+            android:id="@+id/gs_idc_no_data_ly"
+            android:visibility="gone"
+            android:layout_height="140dp"
+            android:gravity="center" >
+
+            <ImageView
+                style="@style/gs_both_wrap_content"
+                android:background="@drawable/gs_no_wifi" />
+
+            <TextView
+                style="@style/gs_both_wrap_content"
+                android:text="@string/gs_idc_no_data"
+                android:textColor="#666666"
+                android:paddingLeft="10dp"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

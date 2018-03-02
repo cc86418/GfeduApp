@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <jc.cici.android.atom.view.AutoCardView
+        android:id="@+id/cardView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220px"
+        android:layout_margin="15px"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220px">
+
+            <ImageView
+                android:id="@+id/product_course_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_studyhome_img" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
+
+                <Button
+                    android:id="@+id/pubic_flag_Img"
+                    android:layout_width="128px"
+                    android:layout_height="30px"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_public"
+                    android:text="公开课"
+                    android:textColor="@color/white"
+                    android:textSize="24px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="44px"
+                android:layout_gravity="bottom"
+                android:background="#90000000">
+
+                <ImageView
+                    android:id="@+id/icon_course_Img"
+                    android:layout_width="20px"
+                    android:layout_height="26px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:background="@drawable/icon_late_lesson" />
+
+                <TextView
+                    android:id="@+id/courseTime_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12px"
+                    android:layout_toRightOf="@+id/icon_course_Img"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxEms="15"
+                    android:textColor="@color/white"
+                    android:textSize="22px" />
+            </RelativeLayout>
+        </com.zhy.autolayout.AutoFrameLayout>
+    </jc.cici.android.atom.view.AutoCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView_layout">
+
+        <TextView
+            android:id="@+id/courseName_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="15"
+            android:textColor="#333333"
+            android:textSize="22px" />
+    </RelativeLayout>
+</RelativeLayout>

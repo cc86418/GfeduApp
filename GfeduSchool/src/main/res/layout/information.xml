@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人信息"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/mybg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="基本信息"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/zhenshixinming_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/zhenshixinming_icon"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_grey" />
+
+        <TextView
+            android:id="@+id/zhenshixinming_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="真实姓名"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/zhenshixinming_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/zhenshixinming_tv"
+            android:text=""
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/nicheng_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+               >
+
+                <ImageButton
+                    android:id="@+id/nicheng_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/nicheng_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="昵称"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/nicheng_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/nicheng_tv"
+                    android:text=""
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+
+    <RelativeLayout
+        android:id="@+id/qianming_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+       >
+
+        <ImageButton
+            android:id="@+id/qianming_icon"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_grey" />
+
+        <TextView
+            android:id="@+id/qianming_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="签名"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/qianming_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58dp"
+            android:layout_toRightOf="@+id/qianming_tv"
+            android:text=""
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/xingbie_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+
+                <ImageButton
+                    android:id="@+id/xingbie_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/xingbie_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="性别"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/xingbie_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="58dp"
+                    android:layout_toRightOf="@+id/xingbie_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+
+
+    <RelativeLayout
+        android:id="@+id/shengri_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+
+        <ImageButton
+            android:id="@+id/shengri_icon"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_grey" />
+
+        <TextView
+            android:id="@+id/shengri_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="生日"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/shengri_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58dp"
+            android:layout_toRightOf="@+id/shengri_tv"
+            android:text=""
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="13sp" />
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/mybg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="联系方式"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+
+    <RelativeLayout
+        android:id="@+id/juzhudizhi_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        >
+
+        <ImageButton
+            android:id="@+id/juzhudizhi_icon"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_grey" />
+
+        <TextView
+            android:id="@+id/juzhudizhi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="居住地址"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/juzhidizhi_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/juzhudizhi_tv"
+            android:text=""
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+
+    <RelativeLayout
+        android:id="@+id/lianxidizhi_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+>
+
+        <ImageButton
+            android:id="@+id/lianxidizhi_icon"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_grey" />
+
+        <TextView
+            android:id="@+id/lianxidizhi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="联系地址"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/lianxidizhi_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/lianxidizhi_tv"
+            android:text=""
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+
+
+    <RelativeLayout
+        android:id="@+id/youxiang_click"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+       >
+
+        <ImageButton
+            android:id="@+id/youxiang_icon"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_grey" />
+
+        <TextView
+            android:id="@+id/youxiang_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="QQ"
+            android:textColor="@color/my_tvcolor"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/youxiang_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="67dp"
+            android:layout_toRightOf="@+id/youxiang_tv"
+            android:text=""
+            android:numeric="integer"
+            android:textColor="@color/my_tvcolor2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/weixin_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+
+                <ImageButton
+                    android:id="@+id/weixin_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/weixin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="微信"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/weixin_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="58dp"
+                    android:layout_toRightOf="@+id/weixin_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/mybg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="教育工作"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/biyeyuanxiao_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+
+                <ImageButton
+                    android:id="@+id/biyeyuanxiao_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/biyeyuanxiao_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="毕业院校"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/biyeyuanxiao_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/biyeyuanxiao_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/jiaoyuchengdu_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+
+                <ImageButton
+                    android:id="@+id/jiaoyuchengdu_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/jiaoyuchengdu_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="教育程度"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/jiaoyuchengdu_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/jiaoyuchengdu_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/dangqianzhuangtai_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+
+                <ImageButton
+                    android:id="@+id/dangqianzhuangtai_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/dangqianzhuangtai_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="当前状态"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/dangqianzhuangtai_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/dangqianzhuangtai_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/suozaidanwei_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+               >
+
+                <ImageButton
+                    android:id="@+id/suozaidanwei_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/suozaidanwei_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="所在单位"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/suozaidanwei_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/suozaidanwei_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/zhiwei_click"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+
+                <ImageButton
+                    android:id="@+id/zhiwei_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/jiantou_grey" />
+
+                <TextView
+                    android:id="@+id/zhiwei_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="职位"
+                    android:textColor="@color/my_tvcolor"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/zhiwei_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="58dp"
+                    android:layout_toRightOf="@+id/zhiwei_tv"
+                    android:text=""
+                    android:textColor="@color/my_tvcolor2"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

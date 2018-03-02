@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_marginTop="20px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <ImageView
+                android:id="@+id/child_node_close_img"
+                android:layout_width="24px"
+                android:layout_height="28px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28px"
+                android:background="@drawable/icon_node_close" />
+
+            <TextView
+                android:id="@+id/child_nameCourse_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22px"
+                android:layout_toRightOf="@+id/child_node_close_img"
+                android:textColor="#666666"
+                android:textSize="24px"
+                tools:text="第一章法的基本指数"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <ImageButton
+                android:id="@+id/child_doExam_txt"
+                android:layout_width="32px"
+                android:layout_height="36px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/icon_do_exam" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px">
+
+            <ProgressBar
+                android:id="@+id/child_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="340px"
+                android:layout_height="6px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="66px"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar"
+                tools:progress="0" />
+
+            <TextView
+                android:id="@+id/child_percentPro_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18px"
+                android:layout_toRightOf="@+id/child_progressBar"
+                android:textColor="#999999"
+                tools:text="5/8" />
+
+            <TextView
+                android:id="@+id/child_rightRate_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:textColor="#999999"
+                android:textSize="18px"
+                tools:text="正确率25%"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

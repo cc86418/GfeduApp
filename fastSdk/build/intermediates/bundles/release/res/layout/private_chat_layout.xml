@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--<ImageView
+        style="@style/gs_width_match_parent"
+        android:layout_height="1px"
+        android:background="@color/doc_private_sep" />-->
+
+    <LinearLayout
+        style="@style/gs_width_match_parent"
+        android:layout_height="@dimen/private_chat_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/private_chat_title_left" >
+
+        <TextView
+            android:id="@+id/private_chat_to_title_tv"
+            style="@style/gs_width_match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="laskdfl"
+            android:textColor="@color/private_chat_title"
+            android:textSize="@dimen/private_chat_title_text" />
+
+        <ImageView
+            android:id="@+id/private_chat_close"
+            style="@style/gs_both_wrap_content"
+            android:background="@drawable/gs_close" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/private_chat_line"
+        style="@style/gs_width_match_parent"
+        android:layout_height="@dimen/private_chat_title_sep"
+        android:background="@color/private_chat_title_sep" />
+
+    <LinearLayout
+        style="@style/gs_both_match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/lv_padding_bottom" >
+
+        <include layout="@layout/bottom_lv_layout" />
+    </LinearLayout>
+    <ImageView
+        style="@style/gs_width_match_parent"
+        android:layout_height="@dimen/private_chat_title_sep"
+        android:background="@color/private_chat_title_sep" />
+</LinearLayout>

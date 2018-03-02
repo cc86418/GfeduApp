@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/base_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/spe_line_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerVertical="true"
+        android:background="#dddddd" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spe_line_img">
+
+        <RelativeLayout
+            android:id="@+id/receiver_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="收货人"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/receiverName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34px"
+                android:layout_toRightOf="@+id/receiver"
+                android:background="@null"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/receiver_layout"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="手机号"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/contactName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34px"
+                android:layout_toRightOf="@+id/contact"
+                android:background="@null"
+                android:textColor="#333333"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/contact_layout"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="邮箱"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/mailName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34px"
+                android:layout_toRightOf="@+id/mail"
+                android:background="@null"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zipCode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/mail_layout"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/zipCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/zipCodeName_txt"
+                android:layout_alignBottom="@+id/zipCodeName_txt"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:text="邮编(选填)"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <EditText
+                android:id="@+id/zipCodeName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34px"
+                android:layout_toRightOf="@+id/zipCode"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/area_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/zipCode_layout"
+            android:background="@color/_ffffff">
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="所在地区"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/areaName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="78px"
+                android:layout_toRightOf="@+id/area"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="26px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/jiantou_grey" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/detailAddress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="188px"
+            android:layout_below="@+id/area_layout"
+            android:background="@color/_ffffff">
+
+            <EditText
+                android:id="@+id/detailAddressName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30px"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请填写详细地址,不少于5个字"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingTop="10px"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="26px" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30px"
+                android:background="#dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/default_layout"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/detailAddress_layout"
+            android:layout_marginTop="20px"
+            android:background="@color/_ffffff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/default_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="设为默认"
+                android:textColor="#333333"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/default_Img"
+                android:layout_width="26px"
+                android:layout_height="26px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/icon_default_select" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/error_hint_txt_color"
+        android:text="保存"
+        android:textColor="@color/_ffffff"
+        android:textSize="28px" />
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="366dp"
+    android:orientation="vertical">
+
+    <cn.jun.indexmain.ImageSlideshow.ImageSlideshow
+        android:id="@+id/is_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="145dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/title_relative"
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+
+            <ImageView
+                android:id="@+id/tj_im"
+                android:layout_width="3dp"
+                android:layout_height="15.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pic_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tj_im"
+                android:text="为你推荐"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/forU_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tj_im_jinru"
+                android:text="更多"
+                android:textColor="#dd5555"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/tj_im_jinru"
+                android:layout_width="6dp"
+                android:layout_height="8.5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_jinru" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/title_relative"
+            android:layout_marginBottom="3.5dp"
+            android:layout_marginTop="3.5dp">
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/forU_im1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_toLeftOf="@+id/line" />
+
+            <ImageView
+                android:id="@+id/forU_im2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@+id/line" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#f5f5f5"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+        <ImageView
+            android:id="@+id/rm_im"
+            android:layout_width="3dp"
+            android:layout_height="15.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pic_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rm_im"
+            android:text="热门班级"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gengduo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/im_jinru"
+            android:text="更多"
+            android:textColor="#dd5555"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/im_jinru"
+            android:layout_width="6dp"
+            android:layout_height="8.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_jinru" />
+
+    </RelativeLayout>
+
+</LinearLayout>

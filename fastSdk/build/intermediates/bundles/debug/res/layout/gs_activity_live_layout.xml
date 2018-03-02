@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mid_tab_bg_nor">
+
+    <LinearLayout
+        android:id="@+id/midTabsTmp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topFloatView"
+        android:background="@drawable/gs_tab_bg_tmp"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" >
+        <include layout="@layout/receiver_video_layout"></include>
+
+        <RelativeLayout
+            android:id="@+id/linLoadView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linLoadPro"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lyProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateBehavior="repeat"
+                        android:indeterminateDrawable="@drawable/progressbar_loading"
+                        android:indeterminateOnly="true"
+                        android:minHeight="100dp"
+                        android:minWidth="100dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:visibility="gone"
+                        android:textColor="@color/gs_white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linLoadNetDisconnected"
+                    style="@style/gs_both_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="165dp"
+                        android:layout_height="62dp"
+                        android:background="@drawable/gs_warming_bg"
+                        android:gravity="center"
+                        android:text="@string/gs_net_have_disconnect"
+                        android:textColor="@color/gs_white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_pip_switch"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/pip_switch"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/videoLayout"
+        android:id="@+id/gs_no_content"
+        android:background="@color/no_content_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gs_no_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/docLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/midTabsTmp" />
+
+    <RelativeLayout
+        android:id="@+id/public_chat_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/midTabsTmp"
+        android:layout_marginBottom="@dimen/gs_chat_bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/public_chat_view_layout" />
+
+        <LinearLayout
+            android:id="@+id/public_chat_my_ly"
+            style="@style/gs_both_match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/public_chat_view_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qa_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/midTabsTmp"
+        android:layout_marginBottom="@dimen/gs_chat_bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/qa_view_layout" />
+
+        <LinearLayout
+            android:id="@+id/public_qa_my_ly"
+            style="@style/gs_both_match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/qa_view_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msg_top_tip_rel"
+        style="@style/gs_width_match_parent"
+        android:layout_below="@id/midTabsTmp">
+
+        <TextView
+            android:id="@+id/msg_top_tip_tv"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/msg_tip"
+            android:gravity="center"
+            android:textColor="@color/msg_other"
+            android:textSize="@dimen/msg_other"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/qa_msg_tip_ly"
+            style="@style/gs_width_match_parent"
+            android:layout_height="@dimen/msg_tip_height"
+            android:background="@color/msg_tip_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/qa_msg_tip_iv"
+                style="@style/gs_both_wrap_content"
+                android:layout_marginLeft="@dimen/msg_tip_iv_left"
+                android:layout_marginRight="@dimen/msg_tip_iv_right"
+                android:background="@drawable/qa_voice" />
+
+            <ImageView
+                android:id="@+id/iv_msg_tip_line"
+                style="@style/gs_both_wrap_content"
+                android:background="@drawable/msg_tip_bg" />
+
+            <com.gensee.fastsdk.ui.view.QaScrollTextView
+                android:id="@+id/qa_msg_content_tv"
+                style="@style/gs_width_match_parent"
+                android:singleLine="true"
+                android:textColor="@color/msg_content"
+                android:textSize="@dimen/msg_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sys_msg_tip_ly"
+            style="@style/gs_width_match_parent"
+            android:layout_height="@dimen/msg_tip_height"
+            android:background="@color/msg_tip_bg"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/sys_msg_tip_iv"
+                style="@style/gs_both_wrap_content"
+                android:layout_marginLeft="@dimen/msg_tip_iv_left"
+                android:layout_marginRight="@dimen/msg_tip_iv_right"
+                android:background="@drawable/sys_msg" />
+
+            <ImageView
+                android:id="@+id/iv_sys_msg_tip_line"
+                style="@style/gs_both_wrap_content"
+                android:background="@drawable/msg_tip_bg" />
+
+            <com.gensee.fastsdk.ui.view.AutoScrollTextView
+                android:id="@+id/sys_msg_content_tv"
+                style="@style/gs_width_match_parent"
+                android:singleLine="true"
+                android:textColor="@color/msg_content"
+                android:textSize="@dimen/msg_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--normal danmaku-->
+    <RelativeLayout
+        android:id="@+id/gs_ly_danmakuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/midTabsTmp"
+        android:layout_marginTop="5dp">
+
+        <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+            android:id="@+id/gs_danmukuView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gs_transparent" />
+    </RelativeLayout>
+
+    <!--reward danmaku-->
+    <RelativeLayout
+        android:id="@+id/gs_ly_reward_danmakuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/midTabsTmp"
+        android:layout_marginTop="50dp">
+
+        <master.flame.danmaku.ui.widget.DanmakuSurfaceView
+            android:id="@+id/gs_reward_danmukuView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gs_transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topFloatView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+        <include layout="@layout/top_float_layout"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/midTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topFloatView"
+        android:background="@drawable/tab_nor_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/lyTab1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/midtabs_first_margin_left">
+
+            <Button
+                android:id="@+id/btnTab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/doc"
+                android:textColor="@drawable/selector_mid_tab_txt"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivUnderLineTab1"
+                style="@style/tab_item_style"
+                android:layout_below="@+id/btnTab1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp">
+
+            <Button
+                android:id="@+id/btnTab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/chat"
+                android:textColor="@drawable/selector_mid_tab_txt"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivUnderLineTab2"
+                style="@style/tab_item_style"
+                android:layout_below="@+id/btnTab2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyTab3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp">
+
+            <Button
+                android:id="@+id/btnTab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/qa"
+                android:textColor="@drawable/selector_mid_tab_txt"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivUnderLineTab3"
+                style="@style/tab_item_style"
+                android:layout_below="@+id/btnTab3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/private_chat_ly"
+        style="@style/gs_both_match_parent"
+        android:layout_below="@id/topFloatView"
+        android:layout_marginBottom="@dimen/gs_chat_bottom"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            style="@style/gs_both_match_parent"
+            layout="@layout/private_chat_layout" />
+    </LinearLayout>
+
+    <com.gensee.fastsdk.ui.view.ResizeLayout
+        android:id="@+id/input_bottom_ly"
+        style="@style/gs_both_match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/input_bottom_top_ly"
+            style="@style/gs_both_match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_chat_input"
+            style="@style/gs_width_match_parent">
+
+            <include
+                layout="@layout/chat_bottom_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.gensee.fastsdk.ui.view.ResizeLayout>
+
+    <LinearLayout
+        android:id="@+id/publish_as_receiver_countdown_ly"
+        style="@style/gs_both_match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/topFloatView"
+        android:background="@color/gs_other_color_pop"
+        android:clickable="true"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/card_expand_tv"
+        style="@style/gs_both_wrap_content"
+        android:layout_alignBottom="@+id/topFloatView"
+        android:layout_marginBottom="@dimen/card_margin_bottom"
+        android:background="@drawable/card_expand"
+        android:gravity="center"
+        android:text="@string/card_expand_tip"
+        android:textColor="@color/card_expand_tv"
+        android:textSize="@dimen/card_expand_tv"
+        android:visibility="gone"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/card_ly"
+        style="@style/gs_both_match_parent"
+        android:background="@color/gs_other_color_pop"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <include layout="@layout/card_view_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vote_ly"
+        style="@style/gs_both_match_parent"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include
+            style="@style/gs_both_match_parent"
+            layout="@layout/vote_receiver_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/receiver_mode_localvideo_rl"
+        android:visibility="gone"
+        style="@style/gs_both_wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/tmpTop"
+            style="@style/gs_both_wrap_content">
+
+            <ImageView
+                android:id="@+id/receiverlocalvideoviewIv"
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:background="@color/receiver_localvideo_bg" />
+
+            <RelativeLayout
+                android:id="@+id/receiverlocalvideoview_rl"
+                style="@style/gs_both_wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/gs_black">
+
+                <com.gensee.view.LocalTextureVideoView
+                    android:id="@+id/receiverlocalvideoview"
+                    android:layout_width="1px"
+                    android:layout_height="1px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/border_rl"
+            style="@style/gs_both_wrap_content"
+            android:layout_height="@dimen/local_video_bottom_height"
+            android:layout_alignLeft="@+id/tmpTop"
+            android:layout_alignRight="@+id/tmpTop"
+            android:layout_below="@+id/tmpTop"
+            android:background="@color/receiver_localvideo_bg">
+
+            <LinearLayout
+                style="@style/gs_both_wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/receiverLocalVideoCloseIv"
+                    style="@style/gs_both_wrap_content"
+                    android:background="@drawable/localvideoview_close" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--<LinearLayout
+        android:id="@+id/lottery_ly"
+        style="@style/gs_both_match_parent"
+        android:background="@color/gs_other_color_pop"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/gs_lottery_layout" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/rollcall_ly"
+        style="@style/gs_both_match_parent"
+        android:background="@color/gs_other_color_pop"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/gs_rollcall_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gs_ly_idc"
+        style="@style/gs_both_match_parent"
+        android:background="@color/gs_other_color_pop"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/gs_idc_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gs_black_idc_ly"
+        style="@style/gs_both_match_parent"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <include
+            layout="@layout/gs_black_idc_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gs_exit_rel"
+        style="@style/gs_both_match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/gs_progress_exit_wait" />
+    </RelativeLayout>
+
+    <include layout="@layout/gs_reward_layout"/>
+
+</RelativeLayout>
+

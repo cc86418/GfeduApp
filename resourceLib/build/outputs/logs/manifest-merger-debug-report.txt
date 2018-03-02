@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:1-18:12
+	package
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:3:5-31
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:5:5-30
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:4:5-28
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml
+		INJECTED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml
+uses-sdk
+ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:7:5-9:40
+	android:targetSdkVersion
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:9:9-37
+	android:minSdkVersion
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:8:9-34
+application
+ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:11:5-16:19
+	android:allowBackup
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:12:9-35
+activity#com.gensee.rtlib.LibActivity
+ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:13:9-15:20
+	android:name
+		ADDED from D:\StudioWorkSpaec\GfeduApp\resourceLib\AndroidManifest.xml:14:13-56

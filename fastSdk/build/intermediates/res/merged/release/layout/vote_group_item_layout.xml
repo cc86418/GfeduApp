@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:paddingLeft="@dimen/vote_group_item_padding_hor"
+    android:paddingRight="@dimen/vote_group_item_padding_hor">
+
+    <TextView
+        android:id="@+id/vote_question_name_tv"
+        style="@style/gs_width_match_parent"
+        android:textColor="@color/vote_group_item_tv"
+        android:textSize="@dimen/vote_group_item_tv" />
+
+</LinearLayout>

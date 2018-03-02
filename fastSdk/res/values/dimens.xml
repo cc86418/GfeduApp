@@ -1,0 +1,182 @@
+<resources>
+
+    <dimen name="gs_ic_width">40dp</dimen>
+    <dimen name="gs_ic_margin">10dp</dimen>
+    <dimen name="gs_normal_margin">10dp</dimen>
+    <dimen name="title_height_vertical">44dp</dimen>
+    <dimen name="title_margin_hor">75dp</dimen>
+    <dimen name="title_height_horizontal">40dp</dimen>
+    <dimen name="tab_height">38dp</dimen>
+
+    <!-- chat -->
+    <dimen name="gs_chat_bottom">49dp</dimen>
+    <dimen name="gs_chat_bottom_left">10dp</dimen>
+    <dimen name="gs_chat_bottom_right_1">10dp</dimen>
+    <dimen name="gs_chat_bottom_right_2">15dp</dimen>
+    <dimen name="gs_chat_send">15sp</dimen>
+    <dimen name="gs_chat_editview_context">12sp</dimen>
+    <dimen name="gs_emotion_panel_height">120dp</dimen>
+    <dimen name="gs_msg_bottom_ly">35dp</dimen>
+    <dimen name="gs_msg_bottom_tv">13sp</dimen>
+    <dimen name="gs_chat_width">250dp</dimen>
+    <dimen name="gs_chat_height">210dp</dimen>
+    <dimen name="lv_padding_bottom">7dp</dimen>
+    <dimen name="emotion_panel_addimg_height">31dp</dimen>
+
+    <!-- qa -->
+    <dimen name="qa_item_top">15dp</dimen>
+    <dimen name="qa_item_hor">8dp</dimen>
+    <dimen name="qa_item_content_ver">2dp</dimen>
+    <dimen name="qa_item_content">13sp</dimen>
+    <dimen name="qa_item_time">10sp</dimen>
+    <dimen name="qa_item_expand_left_iv">14dp</dimen>
+
+    <!-- public chat item -->
+    <dimen name="public_chat_ver_line">2dp</dimen>
+    <dimen name="public_chat_item_top">15dp</dimen>
+    <dimen name="public_chat_item_left">10dp</dimen>
+    <dimen name="public_chat_item_hor">4dp</dimen>
+    <dimen name="public_chat_item_ver">2dp</dimen>
+    <dimen name="public_chat_item_tip">13sp</dimen>
+    <dimen name="public_chat_item_time">11sp</dimen>
+    <dimen name="public_chat_item_content">13sp</dimen>
+    <dimen name="public_chat_item_line_left">18dp</dimen>
+    <dimen name="public_chat_line_top">18dp</dimen>
+
+    <!-- private chat -->
+    <dimen name="private_chat_title_text">16sp</dimen>
+    <dimen name="private_chat_title_offline_text">15sp</dimen>
+    <dimen name="private_chat_title">45dp</dimen>
+    <dimen name="private_chat_title_left">10dp</dimen>
+    <dimen name="private_chat_title_right">15dp</dimen>
+    <dimen name="private_chat_title_sep">1px</dimen>
+    <dimen name="private_to_name">12sp</dimen>
+    <dimen name="private_time">12sp</dimen>
+    <dimen name="private_content">13sp</dimen>
+    <dimen name="private_content_paddingLeft">8dp</dimen>
+    <dimen name="private_top">15dp</dimen>
+    <dimen name="private_item_ver">4dp</dimen>
+    <dimen name="private_item_content_left">10dp</dimen>
+    <dimen name="private_item_content_margin">100dp</dimen>
+    <dimen name="private_item_title_left1">10dp</dimen>
+    <dimen name="private_item_title_left2">5dp</dimen>
+    <dimen name="private_item_time_left">8dp</dimen>
+    <dimen name="private_item_text_size">12sp</dimen>
+
+
+    <dimen name="gs_top_layout_margin">10dp</dimen>
+    <dimen name="gs_idc_item_height">56dp</dimen>
+    <dimen name="gs_idc_item_text_size">18sp</dimen>
+    <dimen name="gs_idc_content_item">12sp</dimen>
+    <dimen name="gs_idc_max_ver">100dp</dimen>
+    <dimen name="gs_idc_title_left">15dp</dimen>
+    <dimen name="gs_idc_title_height">44dp</dimen>
+    <dimen name="gs_idc_title_tv">15sp</dimen>
+    <dimen name="gs_idc_content_top">10dp</dimen>
+    <dimen name="gs_idc_content_left">30dp</dimen>
+    <dimen name="gs_idc_width_btn">114dp</dimen>
+    <dimen name="gs_idc_height_btn">31dp</dimen>
+    <dimen name="gs_idc_btn_tv">14sp</dimen>
+    <dimen name="gs_idc_btn_bottom">30dp</dimen>
+    <dimen name="gs_idc_btn_top">24dp</dimen>
+
+    <dimen name="gs_tip_item_text">15sp</dimen>
+    <!--TextSize-->
+    <dimen name="gs_ts_title">18sp</dimen>
+    <dimen name="gs_reward_btn_width">90dp</dimen>
+    <dimen name="gs_reward_btn_height">40dp</dimen>
+
+    <!-- card -->
+    <dimen name="card_margin_bottom">49dp</dimen>
+    <dimen name="card_expand_tv">10sp</dimen>
+    <dimen name="card_page_margin_hor">30dp</dimen>
+    <dimen name="card_page_title_tv">15sp</dimen>
+    <dimen name="card_page_title_height">40dp</dimen>
+    <dimen name="card_page_title_hor">10dp</dimen>
+    <dimen name="card_page_content_tip_tv">10sp</dimen>
+    <dimen name="card_page_content_tip_height">21dp</dimen>
+    <dimen name="card_page_publish_option_ver">30dp</dimen>
+    <dimen name="card_page_publish_bth_bottom">20dp</dimen>
+    <dimen name="card_page_publish_option_item">12dp</dimen>
+    <dimen name="card_page_publish_btn_width">110dp</dimen>
+    <dimen name="card_page_publish_btn_height">31dp</dimen>
+    <dimen name="card_page_publish_btn">13sp</dimen>
+    <dimen name="card_page_result_publish_options_top">20dp</dimen>
+    <dimen name="card_page_result_publish_options_bottom">26dp</dimen>
+    <dimen name="card_page_result_publish_tip_bottom">14dp</dimen>
+    <dimen name="card_page_result_publish_item_top">15dp</dimen>
+    <dimen name="card_progredd_hor">8dp</dimen>
+    <dimen name="card_page_options_tv">24sp</dimen>
+
+    <!-- vote -->
+    <dimen name="vote_title_top">48dp</dimen>
+    <dimen name="vote_title_tv">15sp</dimen>
+    <dimen name="vote_title_top_hor">14dp</dimen>
+    <dimen name="vote_bottom_ly">60dp</dimen>
+    <dimen name="vote_bottom_btn_hor">20dp</dimen>
+    <dimen name="vote_bottom_btn_text">15sp</dimen>
+    <dimen name="vote_force_ly">20dp</dimen>
+    <dimen name="vote_force_tv">10sp</dimen>
+    <dimen name="vote_force_hor">15dp</dimen>
+    <dimen name="vote_count_tv_left">8dp</dimen>
+    <dimen name="vote_count_tv">14sp</dimen>
+    <dimen name="vote_group_item_padding_top">21dp</dimen>
+    <dimen name="vote_group_item_padding_hor">16dp</dimen>
+    <dimen name="vote_group_item_tv">12sp</dimen>
+    <dimen name="vote_child_item_padding_hor">14dp</dimen>
+    <dimen name="vote_child_item_padding1_hor">7dp</dimen>
+    <dimen name="vote_child_item_padding2_hor">4dp</dimen>
+    <dimen name="vote_child_item_padding_top">15dp</dimen>
+    <dimen name="vote_child_item_tv">12sp</dimen>
+    <dimen name="vote_text_height">60dp</dimen>
+    <dimen name="vote_progredd_hor">10dp</dimen>
+    <dimen name="vote_text_tv">12sp</dimen>
+
+    <dimen name="gs_lottery_width">270dp</dimen>
+    <dimen name="gs_lottery_height">205dp</dimen>
+    <dimen name="gs_lottery_title_hor">15dp</dimen>
+    <dimen name="gs_lottery_title_tv">14sp</dimen>
+    <dimen name="gs_lottery_going_text">14sp</dimen>
+    <dimen name="gs_lottery_finish_text">11sp</dimen>
+    <dimen name="gs_lottery_finish_hor">10dp</dimen>
+    <dimen name="gs_lottery_finish_item_hor">10dp</dimen>
+    <dimen name="gs_lottery_title_height">45dp</dimen>
+    <dimen name="gs_lottery_image_width">194dp</dimen>
+    <dimen name="gs_lottery_image_height">44dp</dimen>
+    <dimen name="gs_rollcall_going_tv">24sp</dimen>
+    <dimen name="gs_rollcall_going_roll_tv">13sp</dimen>
+    <dimen name="gs_rollcall_going_roll_btn">113dp</dimen>
+    <dimen name="gs_rollcall_going_time_top">41dp</dimen>
+    <dimen name="gs_rollcall_going_roll_top">26dp</dimen>
+
+    <!-- msg tip -->
+    <dimen name="msg_tip_iv_left">2dp</dimen>
+    <dimen name="msg_tip_iv_right">5dp</dimen>
+    <dimen name="msg_content">12sp</dimen>
+    <dimen name="msg_other">12sp</dimen>
+    <dimen name="msg_tip_height">35dp</dimen>
+    <dimen name="msg_top_tip_tv">183dp</dimen>
+
+    <!-- msg bottom -->
+    <dimen name="msg_bottom_ly">35dp</dimen>
+    <dimen name="msg_bottom_tv">13sp</dimen>
+
+    <!-- receiver localvideo -->
+    <dimen name="receiver_localvideo_bianjie">3dp</dimen>
+    <dimen name="receiver_localvideo_bianjie1">5dp</dimen>
+
+    <!-- volume bright -->
+    <dimen name="volume_bright_height">61dp</dimen>
+    <dimen name="volume_bright_width">135dp</dimen>
+    <dimen name="volume_bright_padding">14dp</dimen>
+    <dimen name="volume_bright_text">14sp</dimen>
+
+    <!-- pip-->
+    <dimen name="pip_left_margin">3dp</dimen>
+    <dimen name="pip_bottom_margin">40dp</dimen>
+    <dimen name="pip_center_margin">10dp</dimen>
+    <dimen name="local_video_bottom_height">30dp</dimen>
+
+    <dimen name="alipay_commit_btn_width">315sp</dimen>
+    <dimen name="midtabs_first_margin_left">15dp</dimen>
+</resources>

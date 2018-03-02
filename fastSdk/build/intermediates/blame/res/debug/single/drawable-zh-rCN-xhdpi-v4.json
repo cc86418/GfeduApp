@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\card_single_error.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\card_single_error.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\options_my_success.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\options_my_success.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\vote_answer_success.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\vote_answer_success.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\options_my_error.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\options_my_error.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\option_success.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\option_success.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\options_error.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\options_error.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\gs_audio_default_content.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\gs_audio_default_content.png"
+    },
+    {
+        "merged": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\build\\intermediates\\res\\merged\\debug\\drawable-zh-rCN-xhdpi-v4\\card_single_success.png",
+        "source": "D:\\StudioWorkSpaec\\GfeduApp\\fastSdk\\res\\drawable-zh-rCN-xhdpi\\card_single_success.png"
+    }
+]

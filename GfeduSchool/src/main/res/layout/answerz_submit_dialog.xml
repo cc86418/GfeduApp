@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subDialog_layout"
+    android:layout_width="600px"
+    android:layout_height="420px"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/test_dialog_bg"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/txtdialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="62px"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdialog_layout"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="44px"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="如您未完成答题，请点击再检查一遍您确认交卷吗？"
+            android:textColor="#666666"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btndialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/spe_line"
+            android:layout_width="1px"
+            android:layout_height="92px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#dddddd" />
+
+        <Button
+            android:id="@+id/sumbit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/spe_line"
+            android:background="#ffffff"
+            android:text="提交试卷"
+            android:textColor="@color/error_hint_txt_color"
+            android:textSize="30px"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/go_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/spe_line"
+            android:background="#ffffff"
+            android:text="在检查一遍"
+            android:textColor="#666666"
+            android:textSize="30px"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_submit_img"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/btndialog_layout"
+        android:background="#dde0e8" />
+
+</RelativeLayout>

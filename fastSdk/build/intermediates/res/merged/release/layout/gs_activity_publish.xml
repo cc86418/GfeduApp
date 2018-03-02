@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gs_ly_simple_live_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a"
+    >
+
+    <FrameLayout
+        android:id="@+id/gs_main_content_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/gs_lyLoadText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/gs_loadText"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gs_white"
+            android:textSize="18sp"
+            android:text="@string/gs_join_reconnecting"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/gs_linLoadView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/gs_linLoadPro"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/gs_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/gs_loading_progressbar148x148"
+                android:indeterminateDuration="3000"
+                android:indeterminateOnly="true" />
+
+            <LinearLayout
+                android:id="@+id/gs_linLoadNetDisconnected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="165dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/gs_warming_bg"
+                    android:gravity="center"
+                    android:text="@string/gs_net_have_disconnect"
+                    android:textColor="@color/gs_white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gs_exit_rel"
+        style="@style/gs_both_match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/gs_progress_exit_wait" />
+    </RelativeLayout>
+
+</RelativeLayout>

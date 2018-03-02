@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fafafb">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddd" />
+
+        <Button
+            android:id="@+id/nav_btn"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/icon_nav" />
+
+        <Button
+            android:id="@+id/custom_btn"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/icon_kefu" />
+
+        <RelativeLayout
+            android:id="@+id/titleName_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/custom_btn"
+            android:layout_toRightOf="@+id/nav_btn"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px">
+
+            <TextView
+                android:id="@+id/titleName_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                tools:text="CFA一级" />
+
+            <ImageView
+                android:id="@+id/down_img"
+                android:layout_width="26px"
+                android:layout_height="13px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/titleName_txt"
+                android:background="@drawable/icon_down" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/content_tike_home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout" />
+</RelativeLayout>
